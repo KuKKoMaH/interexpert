@@ -1,0 +1,24 @@
+.contactForm.grey-block
+  .c
+    .contactForm__main
+      .content
+        h2 Просто оставьте заявку - Все остальное сделаем мы!
+        p Заполните небольшую форму, мы свяжемся с Вами.
+      .contactForm__row
+        .contactForm__input
+          .input: input.input__input(placeholder='ФИО')
+        .contactForm__input
+          .input: input.input__input(placeholder='Телефон')
+      .contactForm__row
+        .contactForm__input
+          .input: input.input__input(placeholder='Должность')
+        .contactForm__input
+          .input: input.input__input(placeholder='Email' type='email')
+      .contactForm__footer
+        button.btn.btn--red Оставить заявку
+        label.checkbox
+          input(type='checkbox')
+          span Я даю согласие на обработку #[a(href='#') персональных данных]
+
+
+    img.contactForm__img(src='https://via.placeholder.com/390x490.png')

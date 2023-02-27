@@ -1,0 +1,28 @@
+.serviceHead(style='background-image: url(' + require('src/modules/frontHead/img/img.jpg') + ')')
+  .c
+    .serviceHead__breadcrumbs
+      include ../breadcrumbs/breadcrumbs_white
+    .serviceHead__content
+      .serviceHead__card
+        h1 Юридические услуги
+        .serviceHead__subtitle #[a(href='#') Помогаем бизнесу] эффективно и грамотно решать юридические вопросы
+        .serviceHead__text Ежедневно любая компания сталкивается с вопросами, для решения которых требуются специальные знания в области права. Департамент налогов и права АКГ «Интерэкспертиза» готов оказать Вам юридическую поддержку, основанную на многолетнем практическом опыте.
+        .serviceHead__buttons
+          .serviceHead__button
+            a.btn.btn--red.btn--block(href='#') Узнать стоимость
+          .serviceHead__button
+            a.btn.btn--outline.btn--block(href='#') Обратиться к эксперту
+      .serviceHead__aside
+        .serviceHead__logo: img(src=require('src/img/rx_logo.png'))
+        .serviceHead__info
+          .serviceHead__slider
+            .serviceHead__slides
+              each i in [1,2,3]
+                .serviceHead__slide
+                  .serviceHead__item
+                    .serviceHead__item-head 21 место
+                    .serviceHead__item-text в рэнкинге крупнейших аудиторских компаний РФ по итогам 2021 г. (RAEX)
+          .serviceHead__navigation
+              .btn.btn--red.btn--icon: +the_svg('arrow')
+        .serviceHead__pagination
+          .pagination

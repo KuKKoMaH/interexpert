@@ -1,0 +1,43 @@
+.block.press
+  .content.content--block
+    h2 Пресс-центр
+
+  .press__items
+    each i in [1,2]
+      .press__item.press__item--wide
+        a.press__card(href='#')
+          span.press__label Налоги и право
+          span.press__img
+          span.press__info
+            span.press__content
+              span.press__name=i
+              span.press__date 21.07.2022
+            span.press__link
+              | Читать полностью
+              +the_svg('arrow')
+  .press__slider
+    .press__items
+      each i in [1,2,3,4]
+        .press__item
+          a.press__card(href='#')
+            span.press__label Налоги и право
+            span.press__img
+            span.press__info
+              span.press__content
+                span.press__name Практически ни один хозяйствующий субъект не застрахован от «встречи» с антимонопольными органами
+                span.press__date 21.07.2022
+              span.press__link
+                | Читать полностью
+                +the_svg('arrow')
+
+  .press__pagination
+    .pagination
+
+  .blockFooter
+    .blockFooter__content
+      .blockFooter__text В разделе «Пресс-центр» Вы можете ознакомиться с новостями АКГ «Интерэкспертиза», а также получить необходимые сведения от сотрудников пресс-службы компании.
+    .blockFooter__aside
+      .blockFooter__actions
+        .blockFooter__action
+          a.btn.btn--block(href='#') В пресс-центр
+

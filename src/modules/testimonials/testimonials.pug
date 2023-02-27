@@ -1,0 +1,30 @@
+.block.testimonials
+  .content.content--block
+    h2 Отзывы
+
+  .navigation.navigation--block
+    .navigation__button.navigation__button--prev: +the_svg('arrow')
+    .navigation__text #[b] / #[span]
+    .navigation__button.navigation__button--next: +the_svg('arrow')
+
+  .testimonials__slider
+    .testimonials__slides
+      each i in [1,2,3,4,5]
+        .testimonials__slide
+          a.testimonials__card(href='#')
+            span.testimonials__title ОАО «МегаФон»
+            span.testimonials__subtitle Телекоммуникации и связь
+            span.testimonials__text В процессе сотрудничества мы неоднократно убеждались в высоком качестве предоставляемых услуг, профессионализме и умении специалистов АКГ «Интерэкспертиза» разрешать многие непростые проблемы...
+            span.testimonials__link
+              | Открыть отзыв
+              +the_svg('arrow')
+
+  .blockFooter
+    .blockFooter__pagination
+      .pagination
+    .blockFooter__aside
+      .blockFooter__actions
+        .blockFooter__action
+          a.btn.btn--outline.btn--block(href='#') Оставить отзыв
+        .blockFooter__action
+          a.btn.btn--block(href='#') Все отзывы

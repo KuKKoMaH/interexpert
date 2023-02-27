@@ -1,0 +1,212 @@
+.frontHead {
+  $this: &;
+
+  padding: 95px 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  z-index: 1;
+  @include fullWidth();
+
+  &__breadcrumbs {
+    margin-bottom: 50px;
+    @include mobile() {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__slides {
+    display: flex;
+    position: relative;
+
+    &--inited {
+      #{$this}__slide {
+        position: absolute;
+
+        &--active {
+          z-index: 10;
+          position: relative;
+
+          #{$this}__card {
+            border-right: 9px solid red;
+          }
+        }
+
+        &--out {
+          transform: translateX(-100px);
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  &__slide {
+    flex-shrink: 0;
+    z-index: 1;
+    width: 60px;
+    transition: left .25s ease-in, opacity .1s ease-in, transform .1s ease-in;
+
+    @for $i from 1 through 10 {
+      &:nth-child(#{$i}) {
+        z-index: #{10 - $i};
+      }
+    }
+
+    @include mobile() {
+      width: 100%;
+
+      &.swiper-slide-active {
+        #{$this}__card {
+          border-color: $red;
+        }
+      }
+    }
+  }
+
+  &__card {
+    background: $white;
+    border-right: 9px solid $grey;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+    padding: 60px 45px;
+    display: flex;
+    flex-direction: column;
+    width: 730px;
+    cursor: pointer;
+    @include anim();
+    @include mobile() {
+      width: 100%;
+      padding: 30px 20px 27px;
+      border-right: 4px solid $grey;
+    }
+
+    &:hover {
+      border-color: $red;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    @include mobile() {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 40px;
+    @include mobile() {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__button {
+    padding-top: 45px;
+    margin-top: auto;
+  }
+
+  &__footer {
+    margin-top: 70px;
+    display: flex;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    @include mobile() {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &-logo {
+      position: relative;
+      width: 147px;
+      height: 72px;
+      background: rgba(255, 255, 255, 0.83);
+      border-radius: 10px;
+      flex-shrink: 0;
+      margin-right: 40px;
+      @include mobile() {
+        margin-bottom: 20px;
+        margin-right: 0;
+      }
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &-content {
+      max-width: 370px;
+    }
+
+    &-header {
+      font-size: 36px;
+      font-weight: 700;
+      color: $red;
+      @include mobile() {
+        font-size: 24px;
+      }
+    }
+
+    &-text {
+      color: $white;
+    }
+  }
+
+  &__pagination {
+    display: none;
+    @include mobile() {
+      margin-top: 25px;
+      display: block;
+    }
+  }
+
+  &__nav {
+    margin-left: auto;
+    display: flex;
+
+    &-button {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: $red;
+      box-shadow: 0px 3px 9px #000000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include anim();
+
+
+      svg {
+        width: 40px;
+        height: 40px;
+        color: $white;
+      }
+
+      &--prev {
+        margin-right: 20px;
+
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+
+      &:hover {
+        background: $blue;
+        box-shadow: none;
+      }
+
+      &:active {
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+      }
+    }
+
+    @include mobile() {
+      display: none;
+    }
+  }
+}

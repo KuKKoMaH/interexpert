@@ -1,0 +1,144 @@
+header.header
+  .header__top
+    .c
+      a.header__logo(href='#'): img(src=require('src/img/logo.svg'))
+      .header__phones
+        +the_svg('phone')
+        a.header__phone(href='#') +7 (495) 777-12-70
+        a.header__phone(href='#') +7 (495) 777-12-71
+      .header__btn
+        button.btn Оставить заявку
+      button.header__megamenu-toggle: +the_svg('menu')
+
+  .header__bottom
+    .c
+      .header__menu
+        ul
+          li.menu-item-has-children
+            a(href='#')
+              |О компании
+              +the_svg('chevrone')
+            .header__submenu
+              .c
+                ul
+                  li
+                    ul
+                      li: a(href='#') О нас
+                      li: a(href='#') Наша команда
+                      li: a(href='#') Рейтинги и рэнкинги
+                  li
+                    ul
+                      li: a(href='#') Банки-партнёры
+                      li: a(href='#') Клиенты
+                      li: a(href='#') Отзывы
+                  li
+                    ul
+                      li: a(href='#') Кейсы
+                      li: a(href='#') Раскрытие информации
+                      li: a(href='#') Реквизиты
+
+          li.menu-item-has-children
+            a(href='#')
+              |Услуги
+              +the_svg('chevrone')
+            .header__submenu
+              .c
+                ul
+                  li
+                    ul
+                      li
+                        a(href='#') Аудиторские услуги
+                        ul
+                          li: a(href='#') Обязательный аудит
+                          li: a(href='#') Инициативный аудит
+                          li: a(href='#') Налоговый аудит
+                          li: a(href='#') Кадровый аудит
+                          li: a(href='#') Обзорная проверка
+                          li: a(href='#') Аудит специальной отчетности, части отчетности
+                          li: a(href='#') Due diligence review
+                      li
+                        a(href='#') Услуги по оценке
+                        ul
+                          li: a(href='#') Переоценка основных средств
+                          li: a(href='#') Оценка бизнеса и предприятия
+                          li: a(href='#') Оценка нематериальных активов
+                          li: a(href='#') Оценка недвижимости
+                          li: a(href='#') Оценка движимого имущества
+                          li: a(href='#') Оценка для МСФО
+                  li
+                    ul
+                      li
+                        a(href='#') Услуги по МСФО
+                        ul
+                          li: a(href='#') Аудит международной отчётности
+                          li: a(href='#') Трансформация финансовой отчётности по МСФО
+                          li: a(href='#') Консультирование в области МСФО
+                          li: a(href='#') Внедрение МСФО
+                          li: a(href='#') Включение в реестр МСП
+                          li: a(href='#') Оценка для МСФО
+                      li
+                        a(href='#') Юридические услуги
+                        ul
+                          li: a(href='#') Консультирование
+                          li: a(href='#') Разработка документов
+                          li: a(href='#') Досудебное урегулирование споров и представительство
+                          li: a(href='#') Судебное урегулирование споров и представительство
+                  li
+                    ul
+                      li
+                        a(href='#') Бухгалтерский и налоговый консалтинг
+                        ul
+                          li: a(href='#') Бухгалтерский и налоговый консалтинг
+                          li: a(href='#') Консультации по учету и налогам
+                          li: a(href='#') Налоговая экспертиза сделок
+                          li: a(href='#') Разработка учетной политики
+                          li: a(href='#') Постановка налогового учета
+                          li: a(href='#') Трансфертное налогообложение
+                          li: a(href='#') Налоговое планирование
+                          li: a(href='#') Маркетинговая политика
+                          li: a(href='#') Налоговое декларирование доходов и вычетов физических лиц
+
+                      li
+                        a(href='#') Бухгалтерский аутсорсинг
+                        ul
+                          li: a(href='#') Восстановление бухгалтерского учёта
+
+                      li
+                        a(href='#') Верификация “зелёных” финансовых инструментов
+
+          li.menu-item-has-children
+            a(href='#')
+              |Пресс-центр
+              +the_svg('chevrone')
+            .header__submenu
+              .c
+                ul
+                  li
+                    ul
+                      li: a(href='#') Новости
+                  li
+                    ul
+                      li: a(href='#') Статьи
+                  li
+                    ul
+                      li: a(href='#') Вопросы и ответы
+
+          li
+            a(href='#') Контакты
+
+      .header__language
+        a.active(href='#') RU
+        | #{' '}|#{' '}
+        a(href='#') ENG
+
+      button.header__search-toggle
+        +the_svg('search')
+        +the_svg('x')
+
+    .header__search
+      .c
+        form.header__search-form
+          input.header__search-input(placeholder='Что ищете?')
+          .header__search-button: button.btn.btn--outline.btn--sm Найти
+
+  include ../megamenu/megamenu

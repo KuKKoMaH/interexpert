@@ -1,0 +1,127 @@
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 600;
+  line-height: 1;
+  //hyphens: auto;
+}
+
+h1, .h1 {
+  font-size: 48px;
+  @include mobile() {
+    font-size: 26px;
+  }
+}
+
+h2, .h2 {
+  font-size: 38px;
+  @include mobile() {
+    font-size: 22px;
+  }
+}
+
+h3, .h3 {
+  font-size: 32px;
+  @include mobile() {
+    font-size: 20px;
+  }
+}
+
+h4, .h4 {
+  font-size: 26px;
+  @include mobile() {
+    font-size: 18px;
+  }
+}
+
+h5, .h5, h6, .h6 {
+  font-size: 22px;
+  @include mobile() {
+    font-size: 16px;
+  }
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 0.7em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a {
+  color: $red;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul, ol {
+  margin-bottom: 1.55em;
+  line-height: 1.5;
+}
+
+ul li, ol li {
+  margin-bottom: .8em;
+  position: relative;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 1.55em;
+
+  li {
+    position: relative;
+  }
+
+}
+
+ol {
+  counter-reset: list;
+  list-style: decimal;
+  padding-left: 1.55em;
+}
+
+del, s {
+  text-decoration: line-through;
+}
+
+table {
+  width: 100%;
+
+  th {
+    font-size: 13px;
+    line-height: (15/13);
+    font-weight: 300;
+    height: 49px;
+  }
+
+  th, td {
+    //border-right: 0;
+    //border-left: 0;
+    padding: 9px 25px;
+    vertical-align: middle;
+
+    //&:first-child {
+    //  border-left: 1px solid $gray;
+    //}
+    //
+    //&:last-child {
+    //  border-right: 1px solid $gray;
+    //}
+  }
+
+  td {
+    font-size: 15px;
+    height: 49px;
+
+  }
+
+  .w0 {
+    width: 0;
+  }
+}

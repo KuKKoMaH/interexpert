@@ -1,0 +1,29 @@
+.frontHead(style='background-image: url(' + require('src/modules/frontHead/img/img.jpg') + ')')
+  .c
+    .frontHead__breadcrumbs
+      include ../breadcrumbs/breadcrumbs_white
+    .frontHead__slider
+      .frontHead__slides
+        each i in [1,2,3,4,5,6,7,8]
+          .frontHead__slide(class=(i === 1 ? 'frontHead__slide--active' : ''))
+            .frontHead__card
+              .frontHead__title.h1 Аудиторские услуги #{i}
+              .frontHead__subtitle.h5 Аудит любой отчётности #[a(href='#') качественно и в срок!]
+              p Проведем независимую проверку финансовой (бухгалтерской) отчетности Вашей компании в соответствии с поставленными целями и задачами. Все виды аудита отчетности от квалифицированных аудиторов с опытом более 20 лет!
+              .frontHead__button: btn.btn.btn--red Обратиться к эксперту
+
+    .frontHead__pagination
+      .pagination
+
+    .frontHead__footer
+      .frontHead__rating
+        .frontHead__rating-logo: img(src=require('src/img/rx_logo.png'))
+        .frontHead__rating-content
+          .frontHead__rating-header 21 место
+          .frontHead__rating-text в рэнкинге крупнейших аудиторских компаний РФ по итогам 2021 г. (RAEX)
+
+      .frontHead__nav
+        button.frontHead__nav-button.frontHead__nav-button--prev: +the_svg('arrow')
+        button.frontHead__nav-button.frontHead__nav-button--next: +the_svg('arrow')
+
+

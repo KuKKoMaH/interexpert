@@ -1,0 +1,25 @@
+.block.team
+  .content.content--block
+    h2 Наша команда
+
+  .navigation.navigation--block
+    .navigation__button.navigation__button--prev: +the_svg('arrow')
+    .navigation__text #[b] / #[span]
+    .navigation__button.navigation__button--next: +the_svg('arrow')
+
+  .team__slider
+    .team__slides
+      each i in [1,2,3,4,5,6,7,8,9,10, 11]
+        .team__slide
+          button.team__card
+            img.team__img(src='https://via.placeholder.com/250x210.png')
+            span.team__name Имя Фамилия
+            span.team__position Должность
+
+  .blockFooter
+    .blockFooter__pagination
+      .pagination
+    .blockFooter__aside
+      .blockFooter__actions
+        .blockFooter__action
+          a.btn.btn--block(href='#') Все эксперты

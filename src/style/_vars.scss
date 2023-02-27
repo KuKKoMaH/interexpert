@@ -1,0 +1,32 @@
+// ====================================
+// colors
+// ====================================
+
+$black: #000;
+$white: #fff;
+$dark-grey: #212121;
+$grey: #C4C4C4;
+$grey2: #717476;
+$grey3: #AFAFAF;
+$grey4: #D9D9D9;
+$grey5: #737373;
+$grey6: #EEEEEE;
+$red: #D9453F;
+$blue: #0067A5;
+
+  // ====================================
+// grid settings
+// ====================================
+$gutter: 15px;
+$gutter-half: ($gutter / 2);
+
+//$breakpoint-sm: 468px
+//$breakpoint-lg: 798px;
+$breakpoint-md: 980px;
+
+//$container-sm: 468px
+//$container-md: 768px;
+$container-lg: 1140px;
+
+
+$header_height: 60px;

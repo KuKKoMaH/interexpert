@@ -1,0 +1,27 @@
+.contactForm.grey-block
+  .c
+    .contactForm__manager
+      img(src=require('src/modules/director/img/director.png'))
+      .contactForm__manager-name Виктория Великанова
+      .contactForm__manager-position Руководитель департамента развития бизнеса
+
+    .contactForm__main
+      .contactForm__block
+        .content
+          h4 Поможем определиться с услугой!
+          p Заполните небольшую форму заявки, и наши специалисты свяжутся с вами для уточнения ваших задач и подберут Вам подходящую услугу.
+      .contactForm__row
+        .contactForm__input
+          .input: input.input__input(placeholder='ФИО')
+        .contactForm__input
+          .input: input.input__input(placeholder='Телефон')
+      .contactForm__row
+        .contactForm__input
+          .input: input.input__input(placeholder='Должность')
+        .contactForm__input
+          .input: input.input__input(placeholder='Email' type='email')
+      .contactForm__footer
+        button.btn.btn--red Оставить заявку
+        label.checkbox
+          input(type='checkbox')
+          span Я даю согласие на обработку #[a(href='#') персональных данных]

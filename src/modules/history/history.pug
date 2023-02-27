@@ -1,0 +1,23 @@
+.block.history
+  .content.content--block
+    h2 История развития
+
+  .navigation.navigation--block
+    .navigation__button.navigation__button--prev: +the_svg('arrow')
+    .navigation__button.navigation__button--next: +the_svg('arrow')
+
+  .history__slider
+    .history__slides
+      each year in [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023]
+        .history__slide
+          .history__card
+            img.history__img(src='https://via.placeholder.com/250x210.png')
+            .history__content
+              .history__title= year
+              .content
+                p АКГ «Интерэкспертиза» (ООО «Интерэкспертиза», ООО «АКГ Интерэкспертиза», ООО «Центр экспертиз» и др. компании группы) заняла высокие места по результатам оценки рейтинговым агентством «RAEX-Аналитика». Это наглядно показывает уровень доверия к нам со стороны действующих клиентов и партнёров, а также подтверждает потенциальным клиентам наш профессионализм.
+
+  .history__timeline
+    each year, i in [2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023]
+      button.history__year(data-index=i)
+        span= year

@@ -1,0 +1,25 @@
+.breadcrumbs {
+  $this: &;
+  color: $grey5;
+  font-size: 16px;
+  @include mobile() {
+    font-size: 12px;
+  }
+
+  a {
+    color: $grey5;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &--white {
+    color: $white;
+
+    a {
+      color: $white;
+    }
+  }
+}

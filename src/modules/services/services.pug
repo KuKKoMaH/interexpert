@@ -1,0 +1,13 @@
+.block.services
+  .content.content--block
+    h2 Наши услуги
+
+  .services__items
+    each i in ['Аудиторские услуги', 'Услуги по МСФО', 'Бухгалтерский аутсорсинг', 'Услуги по оценке', 'Due diligence review', 'Юридические услуги', 'Бухгалтерский и налоговый консалтинг', 'Верификация “зелёных” финансовых инструментов']
+      .services__item
+        a.services__card.btn-container(href='#')
+          span.services__img
+          span.services__info
+            span.services__name=i
+            span.services__price от *** *** руб.
+            span.btn.btn--sm Подробнее

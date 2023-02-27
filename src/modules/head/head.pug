@@ -1,0 +1,35 @@
+.head.block
+  .head__breadcrumbs
+    include ../breadcrumbs/breadcrumbs
+  .head__main
+    .head__title
+      h1 Заголовок
+      //h1 Резидентам - физическим лицам разрешено зачисление дивидендов на счета в иностранных банках
+      .head__date 22.08.2022
+    .head__aside
+      .head__action
+        .btn.btn--outline Кнопка 2
+      .head__action
+        .btn.btn--outline.btn--red Кнопка 2
+      .share(data-services="vkontakte,telegram" data-size='l' data-shape='round')
+
+  .head__menu
+    button.head__menu-title
+      | Меню раздела
+      span.head__menu-icon
+        +the_svg('arrow')
+        +the_svg('x')
+    .head__menu-items
+      ul
+        li: a(href='#') О нас
+        li: a(href='#') Наши команда
+        li: a(href='#') Рейтинги и рэнкинги
+        li: a(href='#') Банки-партнёры
+        li: a(href='#') Клиенты
+        li: a(href='#') Отзывы
+        li: a(href='#') Кейсы
+        li: a(href='#') Раскрытие информации
+        li: a(href='#') Реквизиты
+        li: a(href='#') Контакты
+
+      button.head__menu-close: +the_svg('arrow')

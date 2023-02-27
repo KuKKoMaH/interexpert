@@ -1,0 +1,29 @@
+.block.ratings
+  .content.content--block
+    h2 Рейтинги и рэнкинги
+
+  .navigation.navigation--block
+    .navigation__button.navigation__button--prev: +the_svg('arrow')
+    .navigation__text #[b] / #[span]
+    .navigation__button.navigation__button--next: +the_svg('arrow')
+
+  .ratings__slider
+    .ratings__slides
+      each i in [1,2,3,4,5,6,7,8,9,10, 11]
+        .ratings__slide
+          .ratings__item
+            .ratings__title 21 место
+            .ratings__text в рэнкинге крупнейших российских аудиторских организаций
+            img.ratings__img(src='https://via.placeholder.com/260x180.png?text='+i)
+
+  .ratings__pagination
+    .pagination
+
+  .blockFooter
+    .blockFooter__content
+      .blockFooter__title Полный список мест в рейтингах и рейтингах RAEX
+      .blockFooter__text Чтобы узнать другие достижения компании, перейдите по ссылке или нажмите на кнопку.
+    .blockFooter__aside
+      .blockFooter__actions
+        .blockFooter__action
+          a.btn.btn--block(href='#') К рейтингам

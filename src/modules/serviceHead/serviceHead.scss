@@ -1,0 +1,167 @@
+.serviceHead {
+  $this: &;
+  padding: 80px 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  z-index: 1;
+  @include fullWidth();
+
+  @include mobile() {
+    padding: 60px 0;
+  }
+
+  &__breadcrumbs {
+    margin-bottom: 30px;
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-end;
+    @include mobile() {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__card {
+    flex: 1;
+    background: $white;
+    border-left: 9px solid $red;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+    padding: 60px 45px;
+    @include mobile() {
+      padding: 25px 18px 30px 25px;
+      border-left: 6px solid $red;
+    }
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 30px;
+    @include mobile() {
+      font-size: 16px;
+      margin-top: 15px;
+    }
+  }
+
+  &__text {
+    margin-top: 40px;
+    @include mobile() {
+      margin-top: 15px;
+    }
+  }
+
+  &__buttons {
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px -15px;
+    @include mobile() {
+      padding-top: 25px;
+      margin: 0;
+    }
+  }
+
+  &__button {
+    padding: 10px 15px;
+    @include mobile() {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__aside {
+    width: 310px;
+    margin-left: 40px;
+    @include mobile() {
+      margin: 40px 0 0 0;
+    }
+  }
+
+  &__logo {
+    width: 147px;
+    height: 72px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.83);
+    border-radius: 10px;
+    margin-bottom: 25px;
+    @include mobile() {
+      width: 105px;
+      height: 51px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      max-width: 90%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__info {
+    position: relative;
+  }
+
+  &__slider {
+    overflow: hidden;
+    @include mobile() {
+      overflow: visible;
+    }
+  }
+
+  &__slides {
+    display: flex;
+  }
+
+  &__slide {
+    width: 100%;
+    flex-shrink: 0;
+  }
+
+  &__item {
+    background: rgba(255, 255, 255, 0.83);
+    border-radius: 18px;
+    padding: 14px 25px;
+  }
+
+  &__item-head {
+    font-size: 36px;
+    font-weight: 700;
+    color: $red;
+    @include mobile() {
+      font-size: 24px;
+    }
+  }
+
+  &__item-text {
+    font-weight: 500;
+    @include mobile() {
+      font-size: 16px;
+    }
+  }
+
+  &__pagination {
+    margin-top: 9px;
+    margin-left: 14px;
+  }
+
+  &__navigation {
+    position: absolute;
+    left: 100%;
+    margin-left: 36px;
+    top: 50%;
+    transform: translateY(-50%);
+    @include mobile() {
+      display: none;
+    }
+  }
+}

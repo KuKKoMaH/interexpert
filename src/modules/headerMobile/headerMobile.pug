@@ -1,0 +1,76 @@
+.headerMobile
+  .headerMobile__top
+    .c
+      a.headerMobile__logo(href='#'): img(src=require('src/img/logo.svg'))
+      .headerMobile__languages
+        a.active(href='#') RU
+        | #{' '}|#{' '}
+        a(href='#') ENG
+
+  .headerMobile__bottom
+    .c
+      a.headerMobile__phone(href='#') +7 (495) 777-12-70
+      button.headerMobile__menu-toggle
+        | Меню
+        +the_svg('menu')
+
+  .headerMobile__popup
+    .c
+      .headerMobile__menu
+        ul
+          li
+            a(href='#')
+              | О компании
+              +the_svg('chevrone')
+            ul
+              li: a(href='#') О нас
+              li: a(href='#') Наша команда
+              li: a(href='#') Рейтинги и рэнкинги
+              li: a(href='#') Банки-партнёры
+              li: a(href='#') Клиенты
+              li: a(href='#') Отзывы
+              li: a(href='#') Кейсы
+              li: a(href='#') Раскрытие информации
+              li: a(href='#') Реквизиты
+          li
+            a(href='#')
+              | Услуги
+              +the_svg('chevrone')
+            ul
+              li: a(href='#') Аудиторские услуги
+              li: a(href='#') Услуги по МСФО
+              li: a(href='#') Юридические услуги
+              li: a(href='#') Бухгалтерский аутсорсинг
+              li: a(href='#') Бухгалтерский и налоговый консалтинг
+              li: a(href='#') Услуги по оценке
+              li: a(href='#') Верификация “зелёных” финансовых инструментов
+          li
+            a(href='#')
+              | Пресс-центр
+              +the_svg('chevrone')
+            ul
+              li: a(href='#') Новости
+              li: a(href='#') Статьи
+              li: a(href='#') Вопросы и ответы
+          li
+            a(href='#') Контакты
+
+      .headerMobile__button: button.btn.btn--red.btn--block Оставить заявку
+
+      .headerMobile__block
+        .headerMobile__socials
+          .headerMobile__social: a(href='#'): img(src=require('src/img/vc.png'))
+          .headerMobile__social: a(href='#'): img(src=require('src/img/telegram.png'))
+          .headerMobile__social: a(href='#'): img(src=require('src/img/dzen.png'))
+
+      .headerMobile__contacts
+        a(href='#') inform@interexpertiza.ru
+        br
+        a(href='#') +7 (495) 777-12-70
+        a(href='#') +7 (495) 777-12-71
+
+      .headerMobile__block
+        form.headerMobile__search
+          input.headerMobile__search-input(placeholder='Что ищете?')
+          button.headerMobile__search-button: +the_svg('search')
+

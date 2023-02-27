@@ -1,0 +1,85 @@
+.megamenu
+  .megamenu__backdrop
+
+  .c
+    .megamenu__content
+      button.megamenu__close: +the_svg('x')
+      a.megamenu__logo(href='#'): img(src=require('src/img/logo.svg'))
+      .megamenu__menu
+        ul
+          li
+            a(href='#') О компании
+            ul
+              li: a(href='#') О нас
+              li: a(href='#') Наша команда
+              li: a(href='#') Рейтинги и рэнкинги
+              li: a(href='#') Банки-партнёры
+              li: a(href='#') Клиенты
+              li: a(href='#') Отзывы
+              li: a(href='#') Кейсы
+              li: a(href='#') Раскрытие информации
+              li: a(href='#') Реквизиты
+          li
+            a(href='#') Услуги
+            ul
+              li: a(href='#') Аудиторские услуги
+              li: a(href='#') Услуги по МСФО
+              li: a(href='#') Юридические услуги
+              li: a(href='#') Бухгалтерский аутсорсинг
+              li: a(href='#') Бухгалтерский и налоговый консалтинг
+              li: a(href='#') Услуги по оценке
+              li: a(href='#') Верификация “зелёных” финансовых инструментов
+          li
+            a(href='#') Пресс-центр
+            ul
+              li: a(href='#') Новости
+              li: a(href='#') Статьи
+              li: a(href='#') Вопросы и ответы
+          li
+            a(href='#') Контакты
+
+      .megamenu__block
+        .megamenu__col
+          div: img(src=require('src/img/rx_logo.png'))
+          .megamenu__top-header 21 место
+          .megamenu__top-text в рэнкинге крупнейших аудиторских компаний РФ по итогам 2021 г. (RAEX-Аналитика)
+
+        .megamenu__col
+          .megamenu__header Свяжитесь с нами любым удобным способом:
+          .megamenu__contacts
+            +the_svg('mail')
+            a.megamenu__contact(href='#') inform@interexpertiza.ru
+          .megamenu__contacts
+            +the_svg('phone')
+            a.megamenu__contact(href='#') +7 (495) 777-12-70
+            a.megamenu__contact(href='#') +7 (495) 777-12-71
+
+        .megamenu__col
+          .megamenu__buttons
+            div: button.btn.btn--red Оставить заявку
+            div: button.btn Позвоните мне
+
+      .megamenu__footer
+        .megamenu__col
+          .megamenu__info
+            .megamenu__label Адрес
+            .megamenu__text 117105, г. Москва, Новоданиловская наб., 4А (м. Тульская)
+          .megamenu__info
+            .megamenu__label График работы
+            .megamenu__text Пн-пт с 9:00 до 17:45
+
+        .megamenu__col
+          .megamenu__socials
+            .megamenu__label Присоединяйтесь к профессиональному сообществу
+            .megamenu__links
+              a(href='#'): img(src=require('src/img/vc.png'))
+              a(href='#'): img(src=require('src/img/dzen.png'))
+              a(href='#'): img(src=require('src/img/telegram.png'))
+
+        .megamenu__col
+          .megamenu__submenu
+            ul
+              li: a(href='#') Политика конфиденциальности
+              li: a(href='#') Пользовательское соглашение
+              li: a(href='#') Условия использования cookie
+

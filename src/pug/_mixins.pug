@@ -1,0 +1,4 @@
+mixin the_svg(svgIcon, fileName)
+  svg()&attributes(attributes)
+    use(xlink:href=`img/${fileName ? fileName + '.sprite' : 'sprite'}.svg#` + svgIcon + '-usage')
+

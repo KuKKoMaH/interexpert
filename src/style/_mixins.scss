@@ -1,0 +1,96 @@
+@mixin cf() {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin anim($duration: .1s) {
+  transition: all $duration ease-in;
+}
+
+@mixin mobile() {
+  @media screen and (max-width: $breakpoint-md - 1) {
+    @content;
+  }
+}
+
+@mixin placeholder($color) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  &:-moz-placeholder {
+    color: $color;
+  }
+}
+
+@mixin hidden() {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+@mixin visible() {
+  pointer-events: all;
+  visibility: visible;
+  opacity: 1;
+}
+
+@mixin sprite($name) {
+  background-image: url('img/sprite.svg#' + $name + '-usage');
+}
+
+@mixin link() {
+  //border-bottom: 1px dotted $green-dark;
+  @include anim();
+  &:hover {
+    //color: $green-dark;
+    text-decoration: none;
+  }
+}
+
+@mixin fullWidth() {
+  position: relative;
+  width: 100vw;
+  width: calc(100vw - var(--scrollbar-width));
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin card() {
+  position: relative;
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.25);
+  @include anim();
+  &:before {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    @include anim();
+  }
+
+  &:hover {
+    box-shadow: none;
+
+    &:before {
+      box-shadow: inset 0px 3px 9px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &:active {
+    &:before {
+      box-shadow: none;
+    }
+  }
+}

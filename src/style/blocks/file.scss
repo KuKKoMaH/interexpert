@@ -1,0 +1,40 @@
+.file {
+  $this: &;
+
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+  input {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  &:hover {
+    #{$this}__name {
+      text-decoration: none;
+    }
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+    //color: $green-dark;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+
+  &__name {
+    word-break: break-word;
+    text-decoration: underline;
+    font-size: 13px;
+    line-height: (19/13);
+    letter-spacing: 0.025em;
+  }
+}

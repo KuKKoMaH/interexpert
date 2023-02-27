@@ -1,0 +1,74 @@
+.testimonials {
+  $this: &;
+  position: relative;
+
+  &__slider {
+    overflow: hidden;
+    margin: 0 -15px;
+    @include mobile() {
+      overflow: visible;
+      //margin: 0;
+    }
+  }
+
+  &__slides {
+    display: flex;
+    //margin: 0 -15px;
+  }
+
+  &__slide {
+    width: 50%;
+    flex-shrink: 0;
+    padding: 15px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 21px;
+    color: $black;
+    text-decoration: none;
+    overflow: hidden;
+    height: 100%;
+    @include card();
+    padding: 25px 28px;
+
+    &:before {
+      border-radius: 21px;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    color: $grey2;
+    margin-top: 6px;
+  }
+
+  &__text {
+    margin-top: 14px;
+  }
+
+  &__link {
+    color: $blue;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    margin-top: auto;
+    font-size: 16px;
+    @include mobile() {
+      font-size: 14px;
+    }
+
+    svg {
+      width: 25px;
+      height: 25px;
+      margin-left: 8px;
+    }
+  }
+
+}

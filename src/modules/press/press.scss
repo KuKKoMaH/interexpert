@@ -1,0 +1,162 @@
+.press {
+  $this: &;
+
+  &__slider {
+    margin-top: 15px;
+    @include mobile() {
+      #{$this} {
+        &__items {
+          @include mobile() {
+            flex-direction: row;
+            flex-wrap: nowrap;
+          }
+        }
+
+        &__item {
+          width: 100%;
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    @include mobile() {
+      flex-direction: column;
+      margin: 0;
+    }
+  }
+
+  &__item {
+    padding: 15px;
+    width: 33.3333%;
+
+    &--wide {
+      width: 50%;
+
+      #{$this} {
+        &__info {
+          padding: 25px 20px;
+        }
+
+        &__img {
+          display: none;
+        }
+
+        &__content {
+          flex-direction: column-reverse;
+        }
+
+        &__date {
+          margin: 0 0 15px;
+        }
+      }
+    }
+
+    @include mobile() {
+      padding: 0 0 15px;
+      width: 100%;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 21px;
+    color: $black;
+    text-decoration: none;
+    overflow: hidden;
+    height: 100%;
+    @include card();
+
+    &:before {
+      border-radius: 21px;
+    }
+  }
+
+  &__img {
+    position: relative;
+    height: 100px;
+    background: $grey6;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      object-fit: cover;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    font-size: 14px;
+    color: $white;
+    background: $blue;
+    padding: 5px 10px;
+    border-radius: 39px;
+    right: 21px;
+    top: 24px;
+    z-index: 1;
+  }
+
+  &__info {
+    padding: 30px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    @include mobile() {
+      padding: 20px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    font-weight: 600;
+    @include mobile() {
+      font-size: 16px;
+    }
+  }
+
+  &__date {
+    color: $grey2;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  &__link {
+    color: $red;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: auto;
+    font-size: 16px;
+    @include mobile() {
+      font-size: 14px;
+    }
+
+    svg {
+      width: 25px;
+      height: 25px;
+      margin-left: 8px;
+    }
+  }
+
+  &__pagination {
+    display: none;
+    @include mobile() {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
