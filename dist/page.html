@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <title>Интерэкспертиза</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no">
+    <!--link(rel="stylesheet" media="all" href="style.css")-->
+    <!--link(rel="shortcut icon" href="/favicon.ico")-->
+  <link href="style.css?1677523252270" rel="stylesheet"></head>
+  <body onunload="">
+    <header class="header">
+      <div class="header__top">
+        <div class="c"><a class="header__logo" href="#"><img src="img/img_logo.svg"></a>
+          <div class="header__phones">
+            <svg>
+              <use xlink:href="img/sprite.svg#phone-usage"></use>
+            </svg><a class="header__phone" href="#">+7 (495) 777-12-70</a><a class="header__phone" href="#">+7 (495) 777-12-71</a>
+          </div>
+          <div class="header__btn">
+            <button class="btn">Оставить заявку</button>
+          </div>
+          <button class="header__megamenu-toggle">
+            <svg>
+              <use xlink:href="img/sprite.svg#menu-usage"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="c">
+          <div class="header__menu">
+            <ul>
+              <li class="menu-item-has-children"><a href="#">О компании
+                  <svg>
+                    <use xlink:href="img/sprite.svg#chevrone-usage"></use>
+                  </svg></a>
+                <div class="header__submenu">
+                  <div class="c">
+                    <ul>
+                      <li>
+                        <ul>
+                          <li><a href="#">О нас</a></li>
+                          <li><a href="#">Наша команда</a></li>
+                          <li><a href="#">Рейтинги и рэнкинги</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul>
+                          <li><a href="#">Банки-партнёры</a></li>
+                          <li><a href="#">Клиенты</a></li>
+                          <li><a href="#">Отзывы</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul>
+                          <li><a href="#">Кейсы</a></li>
+                          <li><a href="#">Раскрытие информации</a></li>
+                          <li><a href="#">Реквизиты</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="menu-item-has-children"><a href="#">Услуги
+                  <svg>
+                    <use xlink:href="img/sprite.svg#chevrone-usage"></use>
+                  </svg></a>
+                <div class="header__submenu">
+                  <div class="c">
+                    <ul>
+                      <li>
+                        <ul>
+                          <li><a href="#">Аудиторские услуги</a>
+                            <ul>
+                              <li><a href="#">Обязательный аудит</a></li>
+                              <li><a href="#">Инициативный аудит</a></li>
+                              <li><a href="#">Налоговый аудит</a></li>
+                              <li><a href="#">Кадровый аудит</a></li>
+                              <li><a href="#">Обзорная проверка</a></li>
+                              <li><a href="#">Аудит специальной отчетности, части отчетности</a></li>
+                              <li><a href="#">Due diligence review</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Услуги по оценке</a>
+                            <ul>
+                              <li><a href="#">Переоценка основных средств</a></li>
+                              <li><a href="#">Оценка бизнеса и предприятия</a></li>
+                              <li><a href="#">Оценка нематериальных активов</a></li>
+                              <li><a href="#">Оценка недвижимости</a></li>
+                              <li><a href="#">Оценка движимого имущества</a></li>
+                              <li><a href="#">Оценка для МСФО</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul>
+                          <li><a href="#">Услуги по МСФО</a>
+                            <ul>
+                              <li><a href="#">Аудит международной отчётности</a></li>
+                              <li><a href="#">Трансформация финансовой отчётности по МСФО</a></li>
+                              <li><a href="#">Консультирование в области МСФО</a></li>
+                              <li><a href="#">Внедрение МСФО</a></li>
+                              <li><a href="#">Включение в реестр МСП</a></li>
+                              <li><a href="#">Оценка для МСФО</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Юридические услуги</a>
+                            <ul>
+                              <li><a href="#">Консультирование</a></li>
+                              <li><a href="#">Разработка документов</a></li>
+                              <li><a href="#">Досудебное урегулирование споров и представительство</a></li>
+                              <li><a href="#">Судебное урегулирование споров и представительство</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul>
+                          <li><a href="#">Бухгалтерский и налоговый консалтинг</a>
+                            <ul>
+                              <li><a href="#">Бухгалтерский и налоговый консалтинг</a></li>
+                              <li><a href="#">Консультации по учету и налогам</a></li>
+                              <li><a href="#">Налоговая экспертиза сделок</a></li>
+                              <li><a href="#">Разработка учетной политики</a></li>
+                              <li><a href="#">Постановка налогового учета</a></li>
+                              <li><a href="#">Трансфертное налогообложение</a></li>
+                              <li><a href="#">Налоговое планирование</a></li>
+                              <li><a href="#">Маркетинговая политика</a></li>
+                              <li><a href="#">Налоговое декларирование доходов и вычетов физических лиц</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Бухгалтерский аутсорсинг</a>
+                            <ul>
+                              <li><a href="#">Восстановление бухгалтерского учёта</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#">Верификация “зелёных” финансовых инструментов</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="menu-item-has-children"><a href="#">Пресс-центр
+                  <svg>
+                    <use xlink:href="img/sprite.svg#chevrone-usage"></use>
+                  </svg></a>
+                <div class="header__submenu">
+                  <div class="c">
+                    <ul>
+                      <li>
+                        <ul>
+                          <li><a href="#">Новости</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul>
+                          <li><a href="#">Статьи</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul>
+                          <li><a href="#">Вопросы и ответы</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="header__language"><a class="active" href="#">RU</a> | <a href="#">ENG</a></div>
+          <button class="header__search-toggle">
+            <svg>
+              <use xlink:href="img/sprite.svg#search-usage"></use>
+            </svg>
+            <svg>
+              <use xlink:href="img/sprite.svg#x-usage"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="header__search">
+          <div class="c">
+            <form class="header__search-form">
+              <input class="header__search-input" placeholder="Что ищете?">
+              <div class="header__search-button">
+                <button class="btn btn--outline btn--sm">Найти</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="megamenu">
+        <div class="megamenu__backdrop"></div>
+        <div class="c">
+          <div class="megamenu__content">
+            <button class="megamenu__close">
+              <svg>
+                <use xlink:href="img/sprite.svg#x-usage"></use>
+              </svg>
+            </button><a class="megamenu__logo" href="#"><img src="img/img_logo.svg"></a>
+            <div class="megamenu__menu">
+              <ul>
+                <li><a href="#">О компании</a>
+                  <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Наша команда</a></li>
+                    <li><a href="#">Рейтинги и рэнкинги</a></li>
+                    <li><a href="#">Банки-партнёры</a></li>
+                    <li><a href="#">Клиенты</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Кейсы</a></li>
+                    <li><a href="#">Раскрытие информации</a></li>
+                    <li><a href="#">Реквизиты</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Услуги</a>
+                  <ul>
+                    <li><a href="#">Аудиторские услуги</a></li>
+                    <li><a href="#">Услуги по МСФО</a></li>
+                    <li><a href="#">Юридические услуги</a></li>
+                    <li><a href="#">Бухгалтерский аутсорсинг</a></li>
+                    <li><a href="#">Бухгалтерский и налоговый консалтинг</a></li>
+                    <li><a href="#">Услуги по оценке</a></li>
+                    <li><a href="#">Верификация “зелёных” финансовых инструментов</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Пресс-центр</a>
+                  <ul>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Вопросы и ответы</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="megamenu__block">
+              <div class="megamenu__col">
+                <div><img src="img/img_rx_logo.png"></div>
+                <div class="megamenu__top-header">21 место</div>
+                <div class="megamenu__top-text">в рэнкинге крупнейших аудиторских компаний РФ по итогам 2021 г. (RAEX-Аналитика)</div>
+              </div>
+              <div class="megamenu__col">
+                <div class="megamenu__header">Свяжитесь с нами любым удобным способом:</div>
+                <div class="megamenu__contacts">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#mail-usage"></use>
+                  </svg><a class="megamenu__contact" href="#">inform@interexpertiza.ru</a>
+                </div>
+                <div class="megamenu__contacts">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#phone-usage"></use>
+                  </svg><a class="megamenu__contact" href="#">+7 (495) 777-12-70</a><a class="megamenu__contact" href="#">+7 (495) 777-12-71</a>
+                </div>
+              </div>
+              <div class="megamenu__col">
+                <div class="megamenu__buttons">
+                  <div>
+                    <button class="btn btn--red">Оставить заявку</button>
+                  </div>
+                  <div>
+                    <button class="btn">Позвоните мне</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="megamenu__footer">
+              <div class="megamenu__col">
+                <div class="megamenu__info">
+                  <div class="megamenu__label">Адрес</div>
+                  <div class="megamenu__text">117105, г. Москва, Новоданиловская наб., 4А (м. Тульская)</div>
+                </div>
+                <div class="megamenu__info">
+                  <div class="megamenu__label">График работы</div>
+                  <div class="megamenu__text">Пн-пт с 9:00 до 17:45</div>
+                </div>
+              </div>
+              <div class="megamenu__col">
+                <div class="megamenu__socials">
+                  <div class="megamenu__label">Присоединяйтесь к профессиональному сообществу</div>
+                  <div class="megamenu__links"><a href="#"><img src="img/img_vc.png"></a><a href="#"><img src="img/img_dzen.png"></a><a href="#"><img src="img/img_telegram.png"></a></div>
+                </div>
+              </div>
+              <div class="megamenu__col">
+                <div class="megamenu__submenu">
+                  <ul>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                    <li><a href="#">Условия использования cookie</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="headerMobile">
+      <div class="headerMobile__top">
+        <div class="c"><a class="headerMobile__logo" href="#"><img src="img/img_logo.svg"></a>
+          <div class="headerMobile__languages"><a class="active" href="#">RU</a> | <a href="#">ENG</a></div>
+        </div>
+      </div>
+      <div class="headerMobile__bottom">
+        <div class="c"><a class="headerMobile__phone" href="#">+7 (495) 777-12-70</a>
+          <button class="headerMobile__menu-toggle">Меню
+            <svg>
+              <use xlink:href="img/sprite.svg#menu-usage"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="headerMobile__popup">
+        <div class="c">
+          <div class="headerMobile__menu">
+            <ul>
+              <li><a href="#">О компании
+                  <svg>
+                    <use xlink:href="img/sprite.svg#chevrone-usage"></use>
+                  </svg></a>
+                <ul>
+                  <li><a href="#">О нас</a></li>
+                  <li><a href="#">Наша команда</a></li>
+                  <li><a href="#">Рейтинги и рэнкинги</a></li>
+                  <li><a href="#">Банки-партнёры</a></li>
+                  <li><a href="#">Клиенты</a></li>
+                  <li><a href="#">Отзывы</a></li>
+                  <li><a href="#">Кейсы</a></li>
+                  <li><a href="#">Раскрытие информации</a></li>
+                  <li><a href="#">Реквизиты</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Услуги
+                  <svg>
+                    <use xlink:href="img/sprite.svg#chevrone-usage"></use>
+                  </svg></a>
+                <ul>
+                  <li><a href="#">Аудиторские услуги</a></li>
+                  <li><a href="#">Услуги по МСФО</a></li>
+                  <li><a href="#">Юридические услуги</a></li>
+                  <li><a href="#">Бухгалтерский аутсорсинг</a></li>
+                  <li><a href="#">Бухгалтерский и налоговый консалтинг</a></li>
+                  <li><a href="#">Услуги по оценке</a></li>
+                  <li><a href="#">Верификация “зелёных” финансовых инструментов</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Пресс-центр
+                  <svg>
+                    <use xlink:href="img/sprite.svg#chevrone-usage"></use>
+                  </svg></a>
+                <ul>
+                  <li><a href="#">Новости</a></li>
+                  <li><a href="#">Статьи</a></li>
+                  <li><a href="#">Вопросы и ответы</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="headerMobile__button">
+            <button class="btn btn--red btn--block">Оставить заявку</button>
+          </div>
+          <div class="headerMobile__block">
+            <div class="headerMobile__socials">
+              <div class="headerMobile__social"><a href="#"><img src="img/img_vc.png"></a></div>
+              <div class="headerMobile__social"><a href="#"><img src="img/img_telegram.png"></a></div>
+              <div class="headerMobile__social"><a href="#"><img src="img/img_dzen.png"></a></div>
+            </div>
+          </div>
+          <div class="headerMobile__contacts"><a href="#">inform@interexpertiza.ru</a><br><a href="#">+7 (495) 777-12-70</a><a href="#">+7 (495) 777-12-71</a></div>
+          <div class="headerMobile__block">
+            <form class="headerMobile__search">
+              <input class="headerMobile__search-input" placeholder="Что ищете?">
+              <button class="headerMobile__search-button">
+                <svg>
+                  <use xlink:href="img/sprite.svg#search-usage"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="c">
+      <div class="head block">
+        <div class="head__breadcrumbs">
+          <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/"><a href="#">Главная</a> >  <a href="#">О компании</a> >  <span class="breadcrumb_last" aria-current="page">Заголовок</span></div>
+        </div>
+        <div class="head__main">
+          <div class="head__title">
+            <h1>Заголовок</h1>
+            <!--h1 Резидентам - физическим лицам разрешено зачисление дивидендов на счета в иностранных банках-->
+            <div class="head__date">22.08.2022</div>
+          </div>
+          <div class="head__aside">
+            <div class="head__action">
+              <div class="btn btn--outline">Кнопка 2</div>
+            </div>
+            <div class="head__action">
+              <div class="btn btn--outline btn--red">Кнопка 2</div>
+            </div>
+            <div class="share" data-services="vkontakte,telegram" data-size="l" data-shape="round"></div>
+          </div>
+        </div>
+        <div class="head__menu">
+          <button class="head__menu-title">Меню раздела<span class="head__menu-icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#arrow-usage"></use>
+              </svg>
+              <svg>
+                <use xlink:href="img/sprite.svg#x-usage"></use>
+              </svg></span></button>
+          <div class="head__menu-items">
+            <ul>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Наши команда</a></li>
+              <li><a href="#">Рейтинги и рэнкинги</a></li>
+              <li><a href="#">Банки-партнёры</a></li>
+              <li><a href="#">Клиенты</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Кейсы</a></li>
+              <li><a href="#">Раскрытие информации</a></li>
+              <li><a href="#">Реквизиты</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+            <button class="head__menu-close">
+              <svg>
+                <use xlink:href="img/sprite.svg#arrow-usage"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="serviceHead" style="background-image: url(img/modules_frontHead_img_img.jpg)">
+        <div class="c">
+          <div class="serviceHead__breadcrumbs">
+            <div class="breadcrumbs breadcrumbs--white" typeof="BreadcrumbList" vocab="https://schema.org/"><a href="#">Главная</a> >  <a href="#">О компании</a> >  <span class="breadcrumb_last" aria-current="page">Заголовок</span></div>
+          </div>
+          <div class="serviceHead__content">
+            <div class="serviceHead__card">
+              <h1>Юридические услуги</h1>
+              <div class="serviceHead__subtitle"><a href="#">Помогаем бизнесу</a> эффективно и грамотно решать юридические вопросы</div>
+              <div class="serviceHead__text">Ежедневно любая компания сталкивается с вопросами, для решения которых требуются специальные знания в области права. Департамент налогов и права АКГ «Интерэкспертиза» готов оказать Вам юридическую поддержку, основанную на многолетнем практическом опыте.</div>
+              <div class="serviceHead__buttons">
+                <div class="serviceHead__button"><a class="btn btn--red btn--block" href="#">Узнать стоимость</a></div>
+                <div class="serviceHead__button"><a class="btn btn--outline btn--block" href="#">Обратиться к эксперту</a></div>
+              </div>
+            </div>
+            <div class="serviceHead__aside">
+              <div class="serviceHead__logo"><img src="img/img_rx_logo.png"></div>
+              <div class="serviceHead__info">
+                <div class="serviceHead__slider">
+                  <div class="serviceHead__slides">
+                    <div class="serviceHead__slide">
+                      <div class="serviceHead__item">
+                        <div class="serviceHead__item-head">21 место</div>
+                        <div class="serviceHead__item-text">в рэнкинге крупнейших аудиторских компаний РФ по итогам 2021 г. (RAEX)</div>
+                      </div>
+                    </div>
+                    <div class="serviceHead__slide">
+                      <div class="serviceHead__item">
+                        <div class="serviceHead__item-head">21 место</div>
+                        <div class="serviceHead__item-text">в рэнкинге крупнейших аудиторских компаний РФ по итогам 2021 г. (RAEX)</div>
+                      </div>
+                    </div>
+                    <div class="serviceHead__slide">
+                      <div class="serviceHead__item">
+                        <div class="serviceHead__item-head">21 место</div>
+                        <div class="serviceHead__item-text">в рэнкинге крупнейших аудиторских компаний РФ по итогам 2021 г. (RAEX)</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="serviceHead__navigation">
+                  <div class="btn btn--red btn--icon">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#arrow-usage"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="serviceHead__pagination">
+                <div class="pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contactForm grey-block">
+        <div class="c">
+          <div class="contactForm__manager"><img src="img/modules_director_img_director.png">
+            <div class="contactForm__manager-name">Виктория Великанова</div>
+            <div class="contactForm__manager-position">Руководитель департамента развития бизнеса</div>
+          </div>
+          <div class="contactForm__main">
+            <div class="contactForm__block">
+              <div class="content">
+                <h4>Поможем определиться с услугой!</h4>
+                <p>Заполните небольшую форму заявки, и наши специалисты свяжутся с вами для уточнения ваших задач и подберут Вам подходящую услугу.</p>
+              </div>
+            </div>
+            <div class="contactForm__row">
+              <div class="contactForm__input">
+                <div class="input">
+                  <input class="input__input" placeholder="ФИО">
+                </div>
+              </div>
+              <div class="contactForm__input">
+                <div class="input">
+                  <input class="input__input" placeholder="Телефон">
+                </div>
+              </div>
+            </div>
+            <div class="contactForm__row">
+              <div class="contactForm__input">
+                <div class="input">
+                  <input class="input__input" placeholder="Должность">
+                </div>
+              </div>
+              <div class="contactForm__input">
+                <div class="input">
+                  <input class="input__input" placeholder="Email" type="email">
+                </div>
+              </div>
+            </div>
+            <div class="contactForm__footer">
+              <button class="btn btn--red">Оставить заявку</button>
+              <label class="checkbox">
+                <input type="checkbox"><span>Я даю согласие на обработку <a href="#">персональных данных</a></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block ratings">
+        <div class="content content--block">
+          <h2>Рейтинги и рэнкинги</h2>
+        </div>
+        <div class="navigation navigation--block">
+          <div class="navigation__button navigation__button--prev">
+            <svg>
+              <use xlink:href="img/sprite.svg#arrow-usage"></use>
+            </svg>
+          </div>
+          <div class="navigation__text"><b></b> / <span></span></div>
+          <div class="navigation__button navigation__button--next">
+            <svg>
+              <use xlink:href="img/sprite.svg#arrow-usage"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="ratings__slider">
+          <div class="ratings__slides">
+            <div class="ratings__slide">
+              <div class="ratings__item">
+                <div class="ratings__title">21 место</div>
+                <div class="ratings__text">в рэнкинге крупнейших российских аудиторских организаций</div><img class="ratings__img" src="https://via.placeholder.com/260x180.png?text=1">
+              </div>
+            </div>
+            <div class="ratings__slide">
+              <div class="ratings__item">
+                <div class="ratings__title">21 место</div>
+                <div class="ratings__text">в рэнкинге крупнейших российских аудиторских организаций</div><img class="ratings__img" src="https://via.placeholder.com/260x180.png?text=2">
+              </div>
+            </div>
+            <div class="ratings__slide">
+              <div class="ratings__item">
+                <div class="ratings__title">21 место</div>
+                <div class="ratings__text">в рэнкинге крупнейших российских аудиторских организаций</div><img class="ratings__img" src="https://via.placeholder.com/260x180.png?text=3">
+              </div>
+            </div>
+            <div class="ratings__slide">
+              <div class="ratings__item">
+                <div class="ratings__title">21 место</div>
+                <div class="ratings__text">в рэнкинге крупнейших российских аудиторских организаций</div><img class="ratings__img" src="https://via.placeholder.com/260x180.png?text=4">
+              </div>
+            </div>
+            <div class="ratings__slide">
+              <div class="ratings__item">
+                <div class="ratings__title">21 место</div>
+                <div class="ratings__text">в рэнкинге крупнейших российских аудиторских организаций</div><img class="ratings__img" src="https://via.placeholder.com/260x180.png?text=5">
+              </div>
+            </div>
+            <div class="ratings__slide">
+              <div class="ratings__item">
+                <div class="ratings__title">21 место</div>
+                <div class="ratings__text">в рэнкинге крупнейших российских аудиторских организаций</div><img class="ratings__img" src="https://via.placeholder.com/260x180.png?text=6">
+              </div>
+            </div>
+            <div class="ratings__slide">
+              <div class="ratings__item">
+                <div class="ratings__title">21 место</div>
+                <div class="ratings__text">в рэнкинге крупнейших российских аудиторских организаций</div><img class="ratings__img" src="https://via.placeholder.com/260x180.png?text=7">
+              </div>
+            </div>
+            <div class="ratings__slide">
+              <div class="ratings__item">
+                <div class="ratings__title">21 место</div>
+                <div class="ratings__text">в рэнкинге крупнейших российских аудиторских организаций</div><img class="ratings__img" src="https://via.placeholder.com/260x180.png?text=8">
+              </div>
+            </div>
+            <div class="ratings__slide">
+              <div class="ratings__item">
+                <div class="ratings__title">21 место</div>
+                <div class="ratings__text">в рэнкинге крупнейших российских аудиторских организаций</div><img class="ratings__img" src="https://via.placeholder.com/260x180.png?text=9">
+              </div>
+            </div>
+            <div class="ratings__slide">
+              <div class="ratings__item">
+                <div class="ratings__title">21 место</div>
+                <div class="ratings__text">в рэнкинге крупнейших российских аудиторских организаций</div><img class="ratings__img" src="https://via.placeholder.com/260x180.png?text=10">
+              </div>
+            </div>
+            <div class="ratings__slide">
+              <div class="ratings__item">
+                <div class="ratings__title">21 место</div>
+                <div class="ratings__text">в рэнкинге крупнейших российских аудиторских организаций</div><img class="ratings__img" src="https://via.placeholder.com/260x180.png?text=11">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ratings__pagination">
+          <div class="pagination"></div>
+        </div>
+        <div class="blockFooter">
+          <div class="blockFooter__content">
+            <div class="blockFooter__title">Полный список мест в рейтингах и рейтингах RAEX</div>
+            <div class="blockFooter__text">Чтобы узнать другие достижения компании, перейдите по ссылке или нажмите на кнопку.</div>
+          </div>
+          <div class="blockFooter__aside">
+            <div class="blockFooter__actions">
+              <div class="blockFooter__action"><a class="btn btn--block" href="#">К рейтингам</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block team">
+        <div class="content content--block">
+          <h2>Наша команда</h2>
+        </div>
+        <div class="navigation navigation--block">
+          <div class="navigation__button navigation__button--prev">
+            <svg>
+              <use xlink:href="img/sprite.svg#arrow-usage"></use>
+            </svg>
+          </div>
+          <div class="navigation__text"><b></b> / <span></span></div>
+          <div class="navigation__button navigation__button--next">
+            <svg>
+              <use xlink:href="img/sprite.svg#arrow-usage"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="team__slider">
+          <div class="team__slides">
+            <div class="team__slide">
+              <button class="team__card"><img class="team__img" src="https://via.placeholder.com/250x210.png"><span class="team__name">Имя Фамилия</span><span class="team__position">Должность</span></button>
+            </div>
+            <div class="team__slide">
+              <button class="team__card"><img class="team__img" src="https://via.placeholder.com/250x210.png"><span class="team__name">Имя Фамилия</span><span class="team__position">Должность</span></button>
+            </div>
+            <div class="team__slide">
+              <button class="team__card"><img class="team__img" src="https://via.placeholder.com/250x210.png"><span class="team__name">Имя Фамилия</span><span class="team__position">Должность</span></button>
+            </div>
+            <div class="team__slide">
+              <button class="team__card"><img class="team__img" src="https://via.placeholder.com/250x210.png"><span class="team__name">Имя Фамилия</span><span class="team__position">Должность</span></button>
+            </div>
+            <div class="team__slide">
+              <button class="team__card"><img class="team__img" src="https://via.placeholder.com/250x210.png"><span class="team__name">Имя Фамилия</span><span class="team__position">Должность</span></button>
+            </div>
+            <div class="team__slide">
+              <button class="team__card"><img class="team__img" src="https://via.placeholder.com/250x210.png"><span class="team__name">Имя Фамилия</span><span class="team__position">Должность</span></button>
+            </div>
+            <div class="team__slide">
+              <button class="team__card"><img class="team__img" src="https://via.placeholder.com/250x210.png"><span class="team__name">Имя Фамилия</span><span class="team__position">Должность</span></button>
+            </div>
+            <div class="team__slide">
+              <button class="team__card"><img class="team__img" src="https://via.placeholder.com/250x210.png"><span class="team__name">Имя Фамилия</span><span class="team__position">Должность</span></button>
+            </div>
+            <div class="team__slide">
+              <button class="team__card"><img class="team__img" src="https://via.placeholder.com/250x210.png"><span class="team__name">Имя Фамилия</span><span class="team__position">Должность</span></button>
+            </div>
+            <div class="team__slide">
+              <button class="team__card"><img class="team__img" src="https://via.placeholder.com/250x210.png"><span class="team__name">Имя Фамилия</span><span class="team__position">Должность</span></button>
+            </div>
+            <div class="team__slide">
+              <button class="team__card"><img class="team__img" src="https://via.placeholder.com/250x210.png"><span class="team__name">Имя Фамилия</span><span class="team__position">Должность</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="blockFooter">
+          <div class="blockFooter__pagination">
+            <div class="pagination"></div>
+          </div>
+          <div class="blockFooter__aside">
+            <div class="blockFooter__actions">
+              <div class="blockFooter__action"><a class="btn btn--block" href="#">Все эксперты</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block history">
+        <div class="content content--block">
+          <h2>История развития</h2>
+        </div>
+        <div class="navigation navigation--block">
+          <div class="navigation__button navigation__button--prev">
+            <svg>
+              <use xlink:href="img/sprite.svg#arrow-usage"></use>
+            </svg>
+          </div>
+          <div class="navigation__button navigation__button--next">
+            <svg>
+              <use xlink:href="img/sprite.svg#arrow-usage"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="history__slider">
+          <div class="history__slides">
+            <div class="history__slide">
+              <div class="history__card"><img class="history__img" src="https://via.placeholder.com/250x210.png">
+                <div class="history__content">
+                  <div class="history__title">2010</div>
+                  <div class="content">
+                    <p>АКГ «Интерэкспертиза» (ООО «Интерэкспертиза», ООО «АКГ Интерэкспертиза», ООО «Центр экспертиз» и др. компании группы) заняла высокие места по результатам оценки рейтинговым агентством «RAEX-Аналитика». Это наглядно показывает уровень доверия к нам со стороны действующих клиентов и партнёров, а также подтверждает потенциальным клиентам наш профессионализм.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history__slide">
+              <div class="history__card"><img class="history__img" src="https://via.placeholder.com/250x210.png">
+                <div class="history__content">
+                  <div class="history__title">2011</div>
+                  <div class="content">
+                    <p>АКГ «Интерэкспертиза» (ООО «Интерэкспертиза», ООО «АКГ Интерэкспертиза», ООО «Центр экспертиз» и др. компании группы) заняла высокие места по результатам оценки рейтинговым агентством «RAEX-Аналитика». Это наглядно показывает уровень доверия к нам со стороны действующих клиентов и партнёров, а также подтверждает потенциальным клиентам наш профессионализм.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history__slide">
+              <div class="history__card"><img class="history__img" src="https://via.placeholder.com/250x210.png">
+                <div class="history__content">
+                  <div class="history__title">2012</div>
+                  <div class="content">
+                    <p>АКГ «Интерэкспертиза» (ООО «Интерэкспертиза», ООО «АКГ Интерэкспертиза», ООО «Центр экспертиз» и др. компании группы) заняла высокие места по результатам оценки рейтинговым агентством «RAEX-Аналитика». Это наглядно показывает уровень доверия к нам со стороны действующих клиентов и партнёров, а также подтверждает потенциальным клиентам наш профессионализм.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history__slide">
+              <div class="history__card"><img class="history__img" src="https://via.placeholder.com/250x210.png">
+                <div class="history__content">
+                  <div class="history__title">2013</div>
+                  <div class="content">
+                    <p>АКГ «Интерэкспертиза» (ООО «Интерэкспертиза», ООО «АКГ Интерэкспертиза», ООО «Центр экспертиз» и др. компании группы) заняла высокие места по результатам оценки рейтинговым агентством «RAEX-Аналитика». Это наглядно показывает уровень доверия к нам со стороны действующих клиентов и партнёров, а также подтверждает потенциальным клиентам наш профессионализм.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history__slide">
+              <div class="history__card"><img class="history__img" src="https://via.placeholder.com/250x210.png">
+                <div class="history__content">
+                  <div class="history__title">2014</div>
+                  <div class="content">
+                    <p>АКГ «Интерэкспертиза» (ООО «Интерэкспертиза», ООО «АКГ Интерэкспертиза», ООО «Центр экспертиз» и др. компании группы) заняла высокие места по результатам оценки рейтинговым агентством «RAEX-Аналитика». Это наглядно показывает уровень доверия к нам со стороны действующих клиентов и партнёров, а также подтверждает потенциальным клиентам наш профессионализм.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history__slide">
+              <div class="history__card"><img class="history__img" src="https://via.placeholder.com/250x210.png">
+                <div class="history__content">
+                  <div class="history__title">2015</div>
+                  <div class="content">
+                    <p>АКГ «Интерэкспертиза» (ООО «Интерэкспертиза», ООО «АКГ Интерэкспертиза», ООО «Центр экспертиз» и др. компании группы) заняла высокие места по результатам оценки рейтинговым агентством «RAEX-Аналитика». Это наглядно показывает уровень доверия к нам со стороны действующих клиентов и партнёров, а также подтверждает потенциальным клиентам наш профессионализм.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history__slide">
+              <div class="history__card"><img class="history__img" src="https://via.placeholder.com/250x210.png">
+                <div class="history__content">
+                  <div class="history__title">2016</div>
+                  <div class="content">
+                    <p>АКГ «Интерэкспертиза» (ООО «Интерэкспертиза», ООО «АКГ Интерэкспертиза», ООО «Центр экспертиз» и др. компании группы) заняла высокие места по результатам оценки рейтинговым агентством «RAEX-Аналитика». Это наглядно показывает уровень доверия к нам со стороны действующих клиентов и партнёров, а также подтверждает потенциальным клиентам наш профессионализм.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history__slide">
+              <div class="history__card"><img class="history__img" src="https://via.placeholder.com/250x210.png">
+                <div class="history__content">
+                  <div class="history__title">2017</div>
+                  <div class="content">
+                    <p>АКГ «Интерэкспертиза» (ООО «Интерэкспертиза», ООО «АКГ Интерэкспертиза», ООО «Центр экспертиз» и др. компании группы) заняла высокие места по результатам оценки рейтинговым агентством «RAEX-Аналитика». Это наглядно показывает уровень доверия к нам со стороны действующих клиентов и партнёров, а также подтверждает потенциальным клиентам наш профессионализм.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history__slide">
+              <div class="history__card"><img class="history__img" src="https://via.placeholder.com/250x210.png">
+                <div class="history__content">
+                  <div class="history__title">2018</div>
+                  <div class="content">
+                    <p>АКГ «Интерэкспертиза» (ООО «Интерэкспертиза», ООО «АКГ Интерэкспертиза», ООО «Центр экспертиз» и др. компании группы) заняла высокие места по результатам оценки рейтинговым агентством «RAEX-Аналитика». Это наглядно показывает уровень доверия к нам со стороны действующих клиентов и партнёров, а также подтверждает потенциальным клиентам наш профессионализм.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history__slide">
+              <div class="history__card"><img class="history__img" src="https://via.placeholder.com/250x210.png">
+                <div class="history__content">
+                  <div class="history__title">2019</div>
+                  <div class="content">
+                    <p>АКГ «Интерэкспертиза» (ООО «Интерэкспертиза», ООО «АКГ Интерэкспертиза», ООО «Центр экспертиз» и др. компании группы) заняла высокие места по результатам оценки рейтинговым агентством «RAEX-Аналитика». Это наглядно показывает уровень доверия к нам со стороны действующих клиентов и партнёров, а также подтверждает потенциальным клиентам наш профессионализм.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history__slide">
+              <div class="history__card"><img class="history__img" src="https://via.placeholder.com/250x210.png">
+                <div class="history__content">
+                  <div class="history__title">2020</div>
+                  <div class="content">
+                    <p>АКГ «Интерэкспертиза» (ООО «Интерэкспертиза», ООО «АКГ Интерэкспертиза», ООО «Центр экспертиз» и др. компании группы) заняла высокие места по результатам оценки рейтинговым агентством «RAEX-Аналитика». Это наглядно показывает уровень доверия к нам со стороны действующих клиентов и партнёров, а также подтверждает потенциальным клиентам наш профессионализм.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history__slide">
+              <div class="history__card"><img class="history__img" src="https://via.placeholder.com/250x210.png">
+                <div class="history__content">
+                  <div class="history__title">2021</div>
+                  <div class="content">
+                    <p>АКГ «Интерэкспертиза» (ООО «Интерэкспертиза», ООО «АКГ Интерэкспертиза», ООО «Центр экспертиз» и др. компании группы) заняла высокие места по результатам оценки рейтинговым агентством «RAEX-Аналитика». Это наглядно показывает уровень доверия к нам со стороны действующих клиентов и партнёров, а также подтверждает потенциальным клиентам наш профессионализм.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history__slide">
+              <div class="history__card"><img class="history__img" src="https://via.placeholder.com/250x210.png">
+                <div class="history__content">
+                  <div class="history__title">2022</div>
+                  <div class="content">
+                    <p>АКГ «Интерэкспертиза» (ООО «Интерэкспертиза», ООО «АКГ Интерэкспертиза», ООО «Центр экспертиз» и др. компании группы) заняла высокие места по результатам оценки рейтинговым агентством «RAEX-Аналитика». Это наглядно показывает уровень доверия к нам со стороны действующих клиентов и партнёров, а также подтверждает потенциальным клиентам наш профессионализм.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history__slide">
+              <div class="history__card"><img class="history__img" src="https://via.placeholder.com/250x210.png">
+                <div class="history__content">
+                  <div class="history__title">2023</div>
+                  <div class="content">
+                    <p>АКГ «Интерэкспертиза» (ООО «Интерэкспертиза», ООО «АКГ Интерэкспертиза», ООО «Центр экспертиз» и др. компании группы) заняла высокие места по результатам оценки рейтинговым агентством «RAEX-Аналитика». Это наглядно показывает уровень доверия к нам со стороны действующих клиентов и партнёров, а также подтверждает потенциальным клиентам наш профессионализм.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="history__timeline">
+          <button class="history__year" data-index="0"><span>2010</span></button>
+          <button class="history__year" data-index="1"><span>2011</span></button>
+          <button class="history__year" data-index="2"><span>2012</span></button>
+          <button class="history__year" data-index="3"><span>2013</span></button>
+          <button class="history__year" data-index="4"><span>2014</span></button>
+          <button class="history__year" data-index="5"><span>2015</span></button>
+          <button class="history__year" data-index="6"><span>2016</span></button>
+          <button class="history__year" data-index="7"><span>2017</span></button>
+          <button class="history__year" data-index="8"><span>2018</span></button>
+          <button class="history__year" data-index="9"><span>2019</span></button>
+          <button class="history__year" data-index="10"><span>2020</span></button>
+          <button class="history__year" data-index="11"><span>2021</span></button>
+          <button class="history__year" data-index="12"><span>2022</span></button>
+          <button class="history__year" data-index="13"><span>2023</span></button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="c">
+          <div class="footer__left"><img class="footer__logo" src="img/img_logo.svg">
+            <div class="footer__text">117105, г. Москва, <br>Новоданиловская наб., 4А (м. Тульская)<br><br>График работы: Пн-пт с 9:00 до 17:45</div>
+            <div class="footer__socials"><a href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#telegram-usage"></use>
+                </svg></a><a href="#">
+                <svg>
+                  <use xlink:href="img/sprite.svg#vk-usage"></use>
+                </svg></a></div>
+          </div>
+          <div class="footer__center">
+            <div class="footer__menu">
+              <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Пресс-центр</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Реквизиты</a></li>
+              </ul>
+            </div>
+            <div class="footer__submenu">
+              <ul>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Пользовательское соглашение</a></li>
+                <li><a href="#">Условия использования cookie</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__contacts">
+            <div class="footer__header">Свяжитесь с нами любым удобным способом:</div>
+            <div class="footer__phones"><a href="#">+7 (495) 777-12-70</a><a href="#">+7 (495) 777-12-71</a></div>
+            <div class="footer__email"><a href="#">inform@interexpertiza.ru</a></div>
+            <button class="btn btn--red">Оставить заявку</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="c">
+          <div class="footer__copyright">1992-2022. ООО “Интерэкспертиза”. Все права защищены.</div>
+        </div>
+      </div>
+    </footer>
+    <!--include ../modules/photoswipe/photoswipe-->
+    <!--include ../modules/popup/popup-callback-->
+    <!--include ../modules/popup/popup-discount-->
+    <!--include ../modules/popup/popup-iframe-->
+    <!--include ../modules/popup/popup-order-->
+    <!--include ../modules/popup/popup-politic-->
+    <div class="hidden"></div>
+    <script>(function ( w, dE ) {function u() {dE.style.setProperty('--scrollbar-width', w.innerWidth - dE.clientWidth + "px");}w.addEventListener('resize', u);u()})(window, document.documentElement)</script>
+  <script defer src="app.js"></script></body>
+</html>
