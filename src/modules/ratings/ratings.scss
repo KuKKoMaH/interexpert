@@ -1,62 +1,85 @@
 .ratings {
   $this: &;
 
-  position: relative;
-
-  &__slider {
-    overflow: hidden;
-    margin: -15px;
-    @include mobile() {
-      overflow: visible;
-    }
-  }
-
-  &__slides {
+  &__block {
+    margin-top: 55px;
     display: flex;
-  }
-
-  &__slide {
-    width: 25%;
-    flex-shrink: 0;
-    padding: 15px;
+    align-items: flex-start;
     @include mobile() {
-      width: 100%;
+      flex-direction: column;
+      margin-top: 30px;
     }
   }
 
   &__title {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 600;
-    margin-bottom: 15px;
-    color: $blue;
+    margin-bottom: 25px;
     @include mobile() {
-      font-size: 24px;
-      margin-bottom: 9px;
+      font-size: 18px;
     }
   }
 
-  &__text {
-    margin-bottom: 30px;
+  &__image {
+    width: 235px;
+    padding-left: 30px;
+    margin-left: auto;
+    flex-shrink: 0;
     @include mobile() {
+      width: 100%;
+      padding: 0;
+      margin: 30px 0 0 0;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.25);
+      border-radius: 12px;
+      @include mobile() {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__content {
+    max-width: 760px;
+
+    > * {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__row {
+    display: flex;
+    margin-bottom: 20px;
+    @include mobile() {
+      flex-direction: column;
       margin-bottom: 25px;
     }
   }
 
-  &__img {
-    display: block;
-    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.25);
-    border-radius: 12px;
-    max-width: 100%;
-    height: auto;
+  &__position {
+    width: 140px;
+    flex-shrink: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: $red;
+    @include mobile() {
+      width: 100%;
+      margin: 0 0 5px 0;
+    }
   }
 
-  &__pagination {
-    display: none;
+  &__rest {
+    padding-left: 140px;
+    font-size: 15px;
     @include mobile() {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 25px;
+      padding: 0;
+      font-size: 14px;
     }
   }
 }

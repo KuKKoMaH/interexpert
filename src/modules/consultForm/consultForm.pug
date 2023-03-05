@@ -1,0 +1,38 @@
+.consultForm.block.block--grey
+  .c
+    .consultForm__container
+      .consultForm__main
+        .content
+          h2 Заказать услугу или получить консультацию
+          p Заполните форму и наш менеджер свяжется с Вами в ближайшее время для уточнения деталей проекта.
+          p Если у Вас остались вопросы по деталям оказания услуги, выберите пункт “Консультация” при заполнении формы.#[br]Мы свяжемся с Вами и поможем разобраться.
+        .consultForm__phones
+          a(href='#') +7 (495) 777-12-70
+          a(href='#') +7 (495) 777-12-71
+
+      .consultForm__aside
+        form
+          .consultForm__input
+            .input: input.input__input(placeholder='ФИО')
+          .consultForm__input
+            .input: input.input__input(placeholder='Телефон' type='tel')
+          .consultForm__input
+            .input: input.input__input(placeholder='Email' type='email')
+          .consultForm__input
+            .consultForm__radios
+              .consultForm__radio
+                label.radio
+                  input(type='radio' name='type')
+                  span Заказать
+              .consultForm__radio
+                label.radio
+                  input(type='radio' name='type')
+                  span Консультация
+
+          .consultForm__input
+            label.checkbox
+              input(type='checkbox')
+              span Я даю согласие на обработку #[a(href='#') персональных данных]
+
+          .btn.btn--block.btn--red Оставить заявку
+

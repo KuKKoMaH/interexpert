@@ -1,0 +1,93 @@
+.reasons {
+  $this: &;
+
+  &__content {
+    display: flex;
+    font-size: 16px;
+    @include mobile() {
+      flex-direction: column;
+      font-size: 14px;
+    }
+  }
+
+  &__main {
+    flex: 1;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      position: relative;
+      padding-left: 65px;
+      @include mobile() {
+        padding-left: 45px;
+      }
+
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+      }
+
+      &:before {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 2px solid $grey3;
+        @include mobile() {
+          width: 26px;
+          height: 26px;
+        }
+      }
+
+      &:after {
+        width: 15px;
+        height: 26px;
+        margin-left: 13px;
+        margin-top: -8px;
+        border: 2px solid $red;
+        border-top: 0;
+        border-left: 0;
+        transform: translateY(-50%) rotate(45deg);
+        @include mobile() {
+          width: 11px;
+          height: 22px;
+          margin-left: 12px;
+          margin-top: -7px;
+        }
+      }
+    }
+  }
+
+  &__aside {
+    width: 460px;
+    margin-left: 30px;
+    flex-shrink: 0;
+    @include mobile() {
+      width: 100%;
+      margin: 30px 0 0;
+    }
+  }
+
+  &__card {
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+    padding: 30px 27px;
+    //height: 100%;
+    display: flex;
+    flex-direction: column;
+    @include mobile() {
+      padding: 15px 15px 20px;
+    }
+  }
+
+  &__button {
+    padding-top: 25px;
+    margin-top: auto;
+  }
+}

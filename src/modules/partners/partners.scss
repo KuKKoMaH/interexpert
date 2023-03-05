@@ -1,0 +1,59 @@
+.partners {
+  $this: &;
+
+  &__items {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+    @include mobile() {
+      margin: -10px;
+    }
+  }
+
+  &__item {
+    padding: 15px;
+    width: 25%;
+    @include mobile() {
+      width: 50%;
+      padding: 10px;
+    }
+  }
+
+  &__card {
+    padding: 15px 24px 15px;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid $grey;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  &__name {
+    padding-top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    flex: 1;
+    @include mobile() {
+      font-size: 12px;
+    }
+  }
+}

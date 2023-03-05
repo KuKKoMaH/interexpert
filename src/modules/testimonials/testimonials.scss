@@ -16,10 +16,25 @@
     //margin: 0 -15px;
   }
 
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    @include mobile() {
+      margin: 0;
+      #{$this}__slide {
+        padding: 0 0 15px 0;
+      }
+    }
+  }
+
   &__slide {
     width: 50%;
     flex-shrink: 0;
     padding: 15px;
+    @include mobile() {
+      width: 100%;
+    }
   }
 
   &__card {
@@ -70,5 +85,4 @@
       margin-left: 8px;
     }
   }
-
 }

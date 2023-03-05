@@ -1,0 +1,43 @@
+.present {
+  $this: &;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    @include mobile() {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__img {
+    flex-shrink: 0;
+    margin-right: 40px;
+    @include mobile() {
+      margin: 0 0 25px;
+    }
+  }
+
+  &__content {
+    max-width: 625px;
+    flex: 1;
+  }
+
+  &__title {
+    color: $red;
+    margin-bottom: 15px;
+    @include mobile() {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__button {
+    margin-left: auto;
+    padding-left: 15px;
+    @include mobile(){
+      padding: 0;
+      margin: 25px 0 0;
+      width: 100%;
+    }
+  }
+}

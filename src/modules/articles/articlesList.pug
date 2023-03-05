@@ -1,0 +1,32 @@
+.articles.block
+  .content.block__content.navigationPlaceholder
+    h2 Статьи
+
+  .navigation.navigation--block
+    .navigation__button.navigation__button--prev: +the_svg('arrow')
+    .navigation__text #[b] / #[span]
+    .navigation__button.navigation__button--next: +the_svg('arrow')
+
+  .articles__items
+    each i in [1,2,3,4,5,6,7]
+      .articles__slide
+        a.articles__card(href='#')
+          span.press__label Налоги и право
+          span.press__img: img(src='https://via.placeholder.com/350x100.png')
+          span.press__info
+            span.press__content
+              span.press__name Практически ни один хозяйствующий субъект не застрахован от «встречи» с антимонопольными органами
+              span.press__text ФАС России обладает полномочиями в различных сферах деятельности, контролируя соблюдение антимонопольного законодательства, законодательства в сфере государственного регулирования цен (тарифов), рекламы, в сфере закупок товаров, работ, услуг и др.
+              span.press__date 21.07.2022
+            span.press__link
+              span Читать полностью
+              +the_svg('arrow')
+  .block__footer
+    .block__pagination
+      .pagination
+    .block__aside
+      .block__actions
+        .block__action
+          a.btn.btn--block.btn--outline(href='#')
+            | Все статьи
+            +the_svg('arrow')

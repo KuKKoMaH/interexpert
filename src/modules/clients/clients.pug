@@ -1,5 +1,5 @@
 .clients
-  .content.content--block
+  .content.block__content.navigationPlaceholder
     h2 Клиенты
 
   .navigation.navigation--block
@@ -12,10 +12,10 @@
       each i in [1,2,3,4,5,6,7,8,9,0,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27]
         .clients__slide
           img(src='https://via.placeholder.com/150x150.png?text='+i)
-  .blockFooter
-    .blockFooter__pagination
+  .block__footer
+    .block__pagination
       .pagination
-    .blockFooter__aside
-      .blockFooter__actions
-        .blockFooter__action
+    .block__aside
+      .block__actions
+        .block__action
           a.btn.btn--block(href='#') Все клиенты

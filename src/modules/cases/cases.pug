@@ -1,5 +1,5 @@
 .block.cases
-  .content.content--block
+  .content.block__content
     h2 Кейсы
 
   .cases__items
@@ -11,14 +11,14 @@
             span.cases__name=i
             span.cases__text Производественная компания
             span.cases__link
-              | Перейти к кейсу
+              span Перейти к кейсу
               +the_svg('arrow')
-  .blockFooter
-    .blockFooter__content
-      .blockFooter__title В нашем портфолио более 9 000 кейсов
-      .blockFooter__text Чтобы ознакомиться с полным перечнем кейсов, перейдите по ссылке или нажмите на кнопку.
-    .blockFooter__aside
-      .blockFooter__actions
-        .blockFooter__action
+  .block__footer
+    .block__content
+      .block__title В нашем портфолио более 9 000 кейсов
+      .block__text Чтобы ознакомиться с полным перечнем кейсов, перейдите по ссылке или нажмите на кнопку.
+    .block__aside
+      .block__actions
+        .block__action
           a.btn.btn--block(href='#') Все кейсы
 

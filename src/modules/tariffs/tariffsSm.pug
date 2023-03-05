@@ -1,0 +1,30 @@
+.tariffs.block
+  .content.block__content
+    h2 Тарифы
+    p Текст текст текст  текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+
+  .tariffs__items
+    each i in [1,2,3,4]
+      .tariffs__item.tariffs__item--sm(class=(i === 2 ? 'tariffs__item--primary' : ''))
+        .tariffs__card
+          .tariffs__label Акция
+          .tariffs__head
+            .tariffs__head-sub Тариф
+            |“СТАНДАРТ”
+          .tariffs__body
+            b Состав пакета:
+            .tariffs__option
+              | Устные консультации
+              .tariffs__value ∞
+            .tariffs__option
+              | Письменные консультации
+              .tariffs__value 3
+            .tariffs__option
+              | Письменные#[br]консультации
+              .tariffs__value 3
+          .tariffs__footer
+            .tariffs__price от 30 000 руб./мес.
+            .tariffs__price-old 40 000 руб./мес.
+            .tariffs__button
+              button.btn.btn--block.btn--outline.btn--sm Подробнее
+

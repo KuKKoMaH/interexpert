@@ -1,5 +1,4 @@
 import initSlider, { defaultPagination, defaultPaginationConfig } from "src/js/initSlider";
-import { BREAKPOINT_LG } from "src/js/breakpoints";
 
 initSlider('.team__slider', ($el) => ({
   wrapperClass:   'team__slides',
@@ -9,13 +8,8 @@ initSlider('.team__slider', ($el) => ({
     el:        $el.parents('.team').find('.pagination')[0],
     clickable: true,
   },
-  spaceBetween:   0,
+  spaceBetween:   20,
   slidesPerView:  1,
   slidesPerGroup: 1,
-  breakpoints:    {
-    [BREAKPOINT_LG]: {
-      slidesPerView:  4,
-      slidesPerGroup: 4,
-    },
-  },
+  autoHeight:     true,
 }), defaultPaginationConfig('.team'));

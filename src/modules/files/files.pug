@@ -1,0 +1,12 @@
+.files.block
+  .content.block__content
+    h3 Представляем Вашему вниманию отчеты о деятельности ООО «Интерэкспертиза» за 2014-2021 гг.
+
+  .files__list
+    each i in [1,2,3,4,5]
+      .files__item
+        .files__name  Отчёт ООО «Интерэкспертиза» о своей деятельности за 2021 год
+        .files__aside
+          .btn.btn--sm.btn--gray
+            span Скачать
+            +the_svg('arrow')

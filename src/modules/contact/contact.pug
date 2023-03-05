@@ -1,0 +1,22 @@
+.contact.block
+  .contact__container
+    .contact__main
+      .content.block__content
+        h2 Связаться с отделом маркетинга
+      .contact__header Контакты:
+      .contact__content
+        a(href="#") marketing@interexpertiza.ru#[br]#[br]
+        | +7 (495) 777-12-70  |  +7 (495) 777-12-71 #[br]
+        | (доб. 1631 - Екатерина, 1639 - Ксения)#[br]#[br]
+        | +7 (968) 485-86-08
+      .contact__btn
+        button.btn.btn--red.btn--block
+          span Заказать обратный звонок
+          +the_svg('arrow')
+    .contact__aside
+      each i in [1,2]
+        .contact__person
+          img.contact__img(src='https://via.placeholder.com/320x320.png')
+          .contact__name  Ксения Овчинникова
+          .contact__position Директор по маркетингу
+

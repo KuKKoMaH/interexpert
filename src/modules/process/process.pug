@@ -1,0 +1,23 @@
+.process.block(style='--slides-count: 5;')
+  .content.block__content.navigationPlaceholder
+    h2 Как мы работаем?
+
+  .navigation.navigation--block
+    .navigation__button.navigation__button--prev: +the_svg('arrow')
+    .navigation__text #[b 1] / #[span 5]
+    .navigation__button.navigation__button--next: +the_svg('arrow')
+
+  .process__slider
+    .process__slides
+      each i in [1,2,3,4,5]
+        .process__slide(class=(i === 1 ? 'process__slide--active' : ''))
+          .process__card
+            .process__icon: img(src='https://via.placeholder.com/65x65.png')
+            .process__content
+              .content
+                h6 Запрос документов
+                p Получаем от заказчика необходимые документы, обсуждаем цели, определяем вид объекта и объем прав.
+              a.process__link(href='#')
+                |Начать сотрудничество
+                +the_svg('arrow')
+            .process__counter 0#{i}

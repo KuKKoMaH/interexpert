@@ -1,0 +1,35 @@
+.newsletter {
+  $this: &;
+
+  &__container {
+    display: flex;
+    @include mobile() {
+      flex-direction: column;
+    }
+  }
+
+  &__main {
+    flex: 1;
+    max-width: 680px;
+  }
+
+  &__note {
+    font-size: 14px;
+    color: $grey5;
+  }
+
+  &__aside {
+    width: 415px;
+    margin-left: auto;
+    padding-left: 25px;
+    @include mobile() {
+      width: 100%;
+      padding: 0;
+      margin: 25px 0 0;
+    }
+  }
+
+  &__input {
+    margin-bottom: 25px;
+  }
+}

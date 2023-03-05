@@ -1,0 +1,136 @@
+$process-card-width: 550px;
+
+.process {
+  $this: &;
+
+  position: relative;
+
+  &__slider {
+    padding-right: $process-card-width;
+    @include mobile() {
+      padding: 0;
+      margin: -10px;
+    }
+  }
+
+  &__slides {
+    display: flex;
+    margin-right: calc(-100% / (var(--slides-count) - 1));
+    @include mobile() {
+      margin: 0;
+      width: 100%;
+    }
+
+    &--inited {
+      #{$this}__slide {
+        position: absolute;
+
+        &--active {
+          z-index: 10;
+          position: relative;
+
+          #{$this}__counter {
+            color: rgba($blue, .2);
+          }
+        }
+
+        &--out {
+          transform: translateX(-100px);
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  &__slide {
+    flex: 1;
+    min-width: 0;
+    position: relative;
+    transition: left .25s ease-in, opacity .1s ease-in, transform .1s ease-in;
+
+    @include mobile() {
+      padding: 10px;
+      flex: unset;
+      flex-shrink: 0;
+      min-width: unset;
+      width: 100%;
+    }
+
+    @for $i from 1 through 10 {
+      &:nth-child(#{$i}) {
+        z-index: #{10 - $i};
+      }
+    }
+  }
+
+  &__card {
+    width: $process-card-width;
+    position: relative;
+    padding: 30px 30px 35px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    @include mobile() {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      padding: 14px 15px;
+      box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    &:hover {
+      #{$this}__counter {
+        color: rgba($blue, .2);
+      }
+    }
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    margin-right: 35px;
+    @include mobile() {
+      margin: 0 0 15px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    font-size: 16px;
+    @include mobile() {
+      font-size: 14px;
+    }
+  }
+
+  &__link {
+    color: $red;
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    margin-top: auto;
+    text-decoration: none;
+
+    svg {
+      width: 25px;
+      height: 25px;
+      margin-left: 8px;
+    }
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &__counter {
+    position: absolute;
+    font-size: 96px;
+    font-weight: 800;
+    line-height: 1;
+    color: $grey6;
+    right: 15px;
+    bottom: -14px;
+    @include anim();
+  }
+}

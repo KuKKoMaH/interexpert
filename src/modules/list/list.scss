@@ -1,0 +1,32 @@
+.list {
+  $this: &;
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: items;
+
+    li {
+      counter-increment: items;
+      padding-left: 65px;
+      position: relative;
+      margin-bottom: 32px;
+
+      &:before {
+        content: "0" counter(items);
+        position: absolute;
+        left: 0;
+        top: -4px;
+        font-size: 32px;
+        line-height: 1;
+        font-weight: 700;
+        color: $red;
+      }
+
+      &:nth-child(n+10):before {
+        content: counter(items);
+      }
+    }
+  }
+}

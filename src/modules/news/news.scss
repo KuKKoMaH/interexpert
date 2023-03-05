@@ -1,0 +1,97 @@
+.news {
+  $this: &;
+  position: relative;
+
+  &__slider {
+    overflow: hidden;
+    margin: -15px;
+    @include mobile() {
+      overflow: visible;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  &__slides {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__slide {
+    padding: 15px;
+    width: 50%;
+    flex-shrink: 0;
+    @include mobile() {
+      width: 100%;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 21px;
+    color: $black;
+    border-radius: 18px;
+    @include card();
+    text-decoration: none;
+
+    &:before {
+      border-radius: 18px;
+    }
+  }
+
+  &__head {
+    display: flex;
+    margin-bottom: 25px;
+  }
+
+  &__date {
+    margin-right: auto;
+    color: $grey2;
+    font-size: 14px;
+  }
+
+  &__category {
+    background: $blue;
+    color: $white;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 39px;
+    padding: 5px 10px;
+    @include mobile() {
+      font-size: 12px;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    margin-bottom: 13px;
+  }
+
+  &__text {
+    font-size: 14px;
+  }
+
+  &__link {
+    color: $red;
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    margin-top: auto;
+    font-size: 16px;
+    @include mobile() {
+      font-size: 14px;
+    }
+
+    svg {
+      width: 25px;
+      height: 25px;
+      margin-left: 8px;
+    }
+  }
+}

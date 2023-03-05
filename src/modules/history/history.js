@@ -1,6 +1,14 @@
 import initSlider, { defaultPagination, defaultPaginationConfig } from "src/js/initSlider";
 import { BREAKPOINT_LG } from "src/js/breakpoints";
 
+const scrollNavigation = (index) => {
+  const $button = $yearButtons.filter('[data-index=' + index + ']');
+  $button.addClass(activeYearClass);
+  const buttonEl = $button[0];
+  const parent = buttonEl.parentElement;
+  parent.scrollLeft = buttonEl.offsetLeft - parent.clientWidth / 2 + buttonEl.clientWidth / 2;
+}
+
 const activeYearClass = 'history__year--active';
 const $yearButtons = $('.history__year');
 
@@ -15,14 +23,13 @@ const { getInstance } = initSlider('.history__slider', ($el) => ({
   initialSlide:   $el.find('.history__slide').length - 1,
 }), {
   afterInit:     (swiper, $el) => {
-    $yearButtons.filter('[data-index=' + swiper.snapIndex + ']').addClass(activeYearClass);
     swiper.on('slideChange', function () {
       const activeIndex = swiper.snapIndex;
       $yearButtons.removeClass(activeYearClass)
-      const $button = $yearButtons.filter('[data-index=' + activeIndex + ']');
-      $button.addClass(activeYearClass);
-      $button[0].scrollIntoView();
+      scrollNavigation(activeIndex);
     });
+    $yearButtons.filter('[data-index=' + swiper.snapIndex + ']').addClass(activeYearClass);
+    scrollNavigation(swiper.snapIndex);
   },
   beforeDestroy: (swiper, $el) => {
 

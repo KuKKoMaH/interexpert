@@ -1,0 +1,34 @@
+.calc.block.block--grey
+  .c
+    .calc__container
+      .calc__aside
+        .calc__img: img(src='https://via.placeholder.com/360x360.png')
+        .calc__name Александр Киселёв
+        .calc__position Генеральный директор ООО “Интерэкспертиза-Верификация”
+
+      .calc__main
+        .calc__block
+          .content
+            h4 Рассчитать стоимость верификации
+            p Заполните небольшую форму заявки, и наши специалисты свяжутся с вами для уточнения деталей проекта и расчета точной стоимости.
+          .calc__footer
+            a.btn.btn--red(href='#')
+              +the_svg('calc')
+              span Оставить заявку
+            a.calc__link(href='#')
+              |Полезные материалы
+              +the_svg('arrow')
+        .calc__row
+          .calc__col
+            button.calc__button
+              span.calc__head Задать вопрос
+              span.calc__body
+                span Получить бесплатную консультацию по верификации
+                span.calc__icon: +the_svg('arrow')
+          .calc__col
+            button.calc__button
+              span.calc__head Скачать презентацию
+              span.calc__body
+                span Скачать подробную презентацию о верификации фин. инструментов
+                span.calc__icon: +the_svg('arrow')
+

@@ -1,29 +1,65 @@
-.block.ratings
-  .content.content--block
-    h2 Рейтинги и рэнкинги
+.ratings.block
+  .content.block__content
+    h2 Результаты 2021-2022 г. г. (RAEX)
+    .ratings__block
+      .ratings__content
+        .ratings__title Аудиторская деятельность
+        .ratings__row
+          .ratings__position 21 место
+          .ratings__name в рэнкинге крупнейших российских аудиторских организаций
+        .ratings__row
+          .ratings__position 23 место
+          .ratings__name в рэнкинге крупнейших российских аудиторских групп и сетей
+        .ratings__rest
+          | Позиции в субрэнкингах: #[br]
+          | 14 место - оценочная деятельность; #[br]
+          | 17 место - финансовый консалтинг; #[br]
+          | 17 место - налоговый консалтинг; #[br]
+          | 20 место - аудиторские организации, ранжированные по выручке от аудита; #[br]
+          | 20 место - аудиторские группы, ранжированные по выручке от аудита; #[br]
+          | 28 место - аудиторские организации, ранжированные по выручке от обязательного аудита.
+      .ratings__image: img(src='https://via.placeholder.com/235x300.png')
 
-  .navigation.navigation--block
-    .navigation__button.navigation__button--prev: +the_svg('arrow')
-    .navigation__text #[b] / #[span]
-    .navigation__button.navigation__button--next: +the_svg('arrow')
+  .ratings__block
+    .ratings__content
+      .ratings__title Оценочная деятельность
+      .ratings__row
+        .ratings__position 41 место
+        .ratings__name в рэнкинге делового потенциала оценочных организаций
+      .ratings__row
+        .ratings__position ТОП-100
+        .ratings__name в рэнкинге крупнейших оценочных организаций
+      .ratings__rest
+        | Позиции в субрэнкингах:#[br]
+        | 31 место - переоценка основных средств (в т.ч. в целях МСФО);#[br]
+        | 31 место - оценка нематериальных активов и интеллектуальной собственности.
+    .ratings__image: img(src='https://via.placeholder.com/235x300.png')
 
-  .ratings__slider
-    .ratings__slides
-      each i in [1,2,3,4,5,6,7,8,9,10, 11]
-        .ratings__slide
-          .ratings__item
-            .ratings__title 21 место
-            .ratings__text в рэнкинге крупнейших российских аудиторских организаций
-            img.ratings__img(src='https://via.placeholder.com/260x180.png?text='+i)
+  .ratings__block
+    .ratings__content
+      .ratings__title Консалтинг
+      .ratings__row
+        .ratings__position ТОП-100
+        .ratings__name в рэнкинге крупнейших консалтинговых групп и компаний России
+      .ratings__rest
+        | Позиции в субрэнкингах:#[br]
+        | 26 место - налоговый консалтинг;#[br]
+        | 27 место - оценочная деятельность;#[br]
+        | 44 место - финансовый консалтинг.
+    .ratings__image: img(src='https://via.placeholder.com/235x300.png')
 
-  .ratings__pagination
-    .pagination
+  .ratings__block
+    .ratings__content
+      .ratings__title Аутсорсинг учётных функций
+      .ratings__row
+        .ratings__position 41 место
+        .ratings__name в рэнкинге крупнейших групп и компаний в области аутсорсинга учётных функций
+      .ratings__rest
+        | Позиции в субрэнкингах:#[br]
+        | 18 место - подготовка отчётности (РСБУ);#[br]
+        | 23 место - расчёт заработной платы;#[br]
+        | 25 место - кадровый учёт и кадровое делопроизводство;#[br]
+        | 41 место - бухгалтерский и налоговый учёт.
+    .ratings__image: img(src='https://via.placeholder.com/235x300.png')
 
-  .blockFooter
-    .blockFooter__content
-      .blockFooter__title Полный список мест в рейтингах и рейтингах RAEX
-      .blockFooter__text Чтобы узнать другие достижения компании, перейдите по ссылке или нажмите на кнопку.
-    .blockFooter__aside
-      .blockFooter__actions
-        .blockFooter__action
-          a.btn.btn--block(href='#') К рейтингам
+

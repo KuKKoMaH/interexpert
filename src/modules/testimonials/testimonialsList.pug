@@ -1,0 +1,11 @@
+.block.testimonials
+  .testimonials__items
+    each i in [1,2,3,4,5]
+      .testimonials__slide
+        a.testimonials__card(href='#')
+          span.testimonials__title ОАО «МегаФон»
+          span.testimonials__subtitle Телекоммуникации и связь
+          span.testimonials__text В процессе сотрудничества мы неоднократно убеждались в высоком качестве предоставляемых услуг, профессионализме и умении специалистов АКГ «Интерэкспертиза» разрешать многие непростые проблемы...
+          span.testimonials__link
+            span Открыть отзыв
+            +the_svg('arrow')

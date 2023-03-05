@@ -1,0 +1,66 @@
+.requisites {
+  $this: &;
+
+  &__cols {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 -25px;
+
+    @include mobile() {
+      margin: 0;
+      flex-direction: column;
+    }
+  }
+
+  &__col {
+    flex: 1;
+    padding: 0 25px;
+    @include mobile() {
+      padding: 0;
+      margin-bottom: 30px;
+      width: 100%;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__row {
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include mobile() {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__item {
+    font-size: 16px;
+    @include mobile() {
+      font-size: 14px;
+    }
+  }
+
+  &__header {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    @include mobile() {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__map {
+    border-radius: 18px;
+    overflow: hidden;
+    min-height: 470px;
+    background: $grey6;
+    width: 100%;
+  }
+}

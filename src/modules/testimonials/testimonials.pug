@@ -1,5 +1,5 @@
 .block.testimonials
-  .content.content--block
+  .content.block__content.navigationPlaceholder
     h2 Отзывы
 
   .navigation.navigation--block
@@ -16,15 +16,15 @@
             span.testimonials__subtitle Телекоммуникации и связь
             span.testimonials__text В процессе сотрудничества мы неоднократно убеждались в высоком качестве предоставляемых услуг, профессионализме и умении специалистов АКГ «Интерэкспертиза» разрешать многие непростые проблемы...
             span.testimonials__link
-              | Открыть отзыв
+              span Открыть отзыв
               +the_svg('arrow')
 
-  .blockFooter
-    .blockFooter__pagination
+  .block__footer
+    .block__pagination
       .pagination
-    .blockFooter__aside
-      .blockFooter__actions
-        .blockFooter__action
+    .block__aside
+      .block__actions
+        .block__action
           a.btn.btn--outline.btn--block(href='#') Оставить отзыв
-        .blockFooter__action
+        .block__action
           a.btn.btn--block(href='#') Все отзывы

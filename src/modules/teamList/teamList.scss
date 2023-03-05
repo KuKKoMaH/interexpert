@@ -1,0 +1,69 @@
+.teamList {
+  $this: &;
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    @include mobile() {
+      margin: 0;
+    }
+  }
+
+  &__item {
+    padding: 15px;
+    width: 25%;
+    @include mobile() {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 25px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__card {
+    width: 100%;
+    padding: 34px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 18px;
+    @include card();
+
+    &:before {
+      border-radius: 18px;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  &__name {
+    margin-top: auto;
+    padding-top: 20px;
+    font-weight: 600;
+    color: $red;
+    @include mobile() {
+      font-size: 18px;
+    }
+  }
+
+  &__position {
+    margin-top: 5px;
+    font-size: 16px;
+    @include mobile() {
+      font-size: 14px;
+    }
+  }
+
+  &__btn {
+    margin-top: 20px;
+  }
+
+}
