@@ -86,16 +86,25 @@ $bottom-height: 38px;
   }
 
   &__popup {
-    display: none;
-
+    //display: none;
+    //transform: translateX(-100%);
 
     position: absolute;
     top: $top-height + $bottom-height;
+    bottom: 0;
     z-index: 3;
     left: 0;
     width: 100%;
     background: $white;
     padding-top: 20px;
+    @include anim();
+    @include hidden();
+    transform: translateY(-20px);
+
+    &--active {
+      @include visible();
+      transform: none;
+    }
   }
 
   &__block {
@@ -123,6 +132,7 @@ $bottom-height: 38px;
       margin: 0;
       list-style: none;
       line-height: 1.2;
+      position: static;
     }
 
     > ul {
@@ -149,6 +159,19 @@ $bottom-height: 38px;
 
         &:last-child {
           border: 0;
+        }
+
+        > ul {
+          position: absolute;
+          width: 100%;
+          left: 100%;
+          top: 0;
+          background: $white;
+          min-height: 100%;
+
+          > li {
+
+          }
         }
       }
     }

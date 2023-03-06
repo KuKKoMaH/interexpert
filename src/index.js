@@ -57,3 +57,4 @@ import './modules/prosCons/prosCons.js';
 import './modules/results/results.js';
 import './modules/price/price.js';
 import './modules/pricelist/pricelist.js';
+import './modules/popup/popup.js';
