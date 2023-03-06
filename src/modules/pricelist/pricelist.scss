@@ -1,0 +1,63 @@
+.pricelist {
+  $this: &;
+
+  &__items {
+    margin-top: -25px;
+    @include mobile() {
+      margin-top: -20px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    @include mobile() {
+      padding: 20px 0;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      height: 1px;
+      background: $grey;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &__price {
+    font-size: 22px;
+    font-weight: 600;
+    color: $red;
+    min-width: 200px;
+    text-align: right;
+    margin-left: auto;
+    @include mobile() {
+      font-size: 16px;
+      min-width: 120px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+  }
+
+  &__expand {
+    display: flex;
+    align-items: center;
+    svg {
+      color: $blue;
+      width: 30px;
+      height: 30px;
+      transform: rotate(90deg);
+      margin-left: 10px;
+    }
+  }
+}

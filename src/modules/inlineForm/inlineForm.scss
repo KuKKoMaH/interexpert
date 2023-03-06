@@ -1,0 +1,33 @@
+.inlineForm {
+  $this: &;
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 -15px;
+    @include mobile() {
+      margin: 0;
+      flex-direction: column;
+    }
+  }
+
+  &__col {
+    flex: 1;
+    padding: 0 15px;
+    @include mobile() {
+      width: 100%;
+      padding: 0;
+      margin: 0 0 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__confirm {
+    margin-top: 15px;
+    @include mobile() {
+      margin-top: 10px;
+    }
+  }
+}

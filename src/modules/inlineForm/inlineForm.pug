@@ -1,0 +1,13 @@
+.inlineForm.block
+  .inlineForm__container
+    .inlineForm__col
+      .input: input.input__input(placeholder='ФИО')
+    .inlineForm__col
+      .input: input.input__input(placeholder='Телефон' type='tel')
+    .inlineForm__col
+      button.btn.btn--block.btn--red Начать сотрудничество
+      .inlineForm__confirm
+        label.checkbox
+          input(type='checkbox')
+          span Я даю согласие на обработку #[a(href='#') персональных данных]
+

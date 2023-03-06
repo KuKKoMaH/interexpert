@@ -1,0 +1,80 @@
+.results {
+  $this: &;
+
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    @include mobile() {
+      margin: 0;
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    padding: 15px;
+    width: 33.3333%;
+    @include mobile() {
+      width: 100%;
+      padding: 0;
+      margin: 0 0 15px;
+      &:last-child {
+        margin: 0;
+
+      }
+    }
+  }
+
+  &__card {
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 17px;
+    position: relative;
+    overflow: hidden;
+    padding: 0 19px 20px 27px;
+    height: 100%;
+  }
+
+  &__label {
+    position: absolute;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: $white;
+    background: $red;
+    transform: rotate(45deg);
+    width: 150px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -37px;
+    top: 25px;
+    @include mobile() {
+      font-size: 14px;
+      height: 25px;
+      right: -47px;
+      top: 15px;
+    }
+  }
+
+  &__img {
+    display: flex;
+    align-items: center;
+    height: 120px;
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-size: 16px;
+    @include mobile() {
+      font-size: 14px;
+    }
+  }
+
+}

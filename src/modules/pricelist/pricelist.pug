@@ -1,0 +1,14 @@
+.pricelist.block
+  .content.block__content
+    h2 Стоимость оценки недвижимости
+    p asfsadfasdfa
+
+  .pricelist__items
+    each i in [1,2,3,4,5]
+      .pricelist__item
+        .pricelist__name Квартира / комната
+        .pricelist__price от 4 500 руб.
+  .pricelist__footer
+    button.pricelist__expand
+      |Развернуть
+      +the_svg('arrow')

@@ -7,12 +7,19 @@ $advantages-card-width: 250px;
 
   &__container {
     display: flex;
+    @include mobile() {
+      flex-direction: column;
+    }
   }
 
   &__main {
     width: 360px;
     margin-right: 30px;
     flex-shrink: 0;
+    @include mobile() {
+      width: 100%;
+      margin: 0 0 20px;
+    }
   }
 
   &__banner {
@@ -20,6 +27,9 @@ $advantages-card-width: 250px;
     border-radius: 18px;
     background: $grey6;
     padding: 25px 35px;
+    @include mobile() {
+      padding: 20px 15px;
+    }
   }
 
   &__banner-head1 {
@@ -27,6 +37,9 @@ $advantages-card-width: 250px;
     font-weight: 600;
     line-height: 1;
     color: $red;
+    @include mobile() {
+      font-size: 36px;
+    }
   }
 
   &__banner-head2 {
@@ -34,6 +47,9 @@ $advantages-card-width: 250px;
     font-weight: 600;
     color: $red;
     margin-bottom: 10px;
+    @include mobile() {
+      font-size: 24px;
+    }
   }
 
   &__link {
@@ -45,6 +61,7 @@ $advantages-card-width: 250px;
     text-decoration: none;
     @include mobile() {
       font-size: 14px;
+      margin: 20px 0;
     }
 
     svg {
@@ -133,11 +150,12 @@ $advantages-card-width: 250px;
     flex-direction: column;
     min-height: 360px;
     @include mobile() {
+      padding: 13px 15px;
       flex-direction: column;
       align-items: flex-start;
       width: 100%;
-      padding: 14px 15px;
       box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+      min-height: 0;
     }
   }
 
@@ -146,6 +164,10 @@ $advantages-card-width: 250px;
     width: 100%;
     display: flex;
     align-items: center;
+    @include mobile() {
+      height: 65px;
+      align-items: flex-start;
+    }
   }
 
   &__head {
@@ -153,6 +175,9 @@ $advantages-card-width: 250px;
     font-weight: 600;
     color: $blue;
     margin-bottom: 15px;
+    @include mobile() {
+      font-size: 20px;
+    }
   }
 
   &__text {

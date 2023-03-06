@@ -1,0 +1,44 @@
+.banner {
+  $this: &;
+
+  position: relative;
+
+  @include mobile() {
+    padding-bottom: 0;
+  }
+
+  &__content {
+    padding-right: calc(#{$container-lg} - 750px);
+    @include mobile() {
+      padding: 0;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 50%;
+    margin-left: 180px;
+    @include mobile() {
+      position: static;
+      margin: 0;
+      left: 0;
+      height: auto;
+      margin-top: 65px;
+    }
+
+    img {
+      display: block;
+      height: 100%;
+      width: auto;
+      border-radius: 25px;
+      @include mobile() {
+        border-radius: 0;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

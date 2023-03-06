@@ -1,0 +1,18 @@
+.servicesCards.block
+  .content.block__content
+    h2 Наши услуги
+    p Текст текст текст  текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+
+  .servicesCards__items
+    each i in [1,2,3,4,5,6,7,8]
+      .servicesCards__item
+        a.servicesCards__card.btnContainer(href='#')
+          span.servicesCards__img: img(src='https://via.placeholder.com/360x165.png')
+          span.servicesCards__content
+            span.servicesCards__name Консультации по учету и налогам
+            span.servicesCards__text текст текст текст текст текст текст текст текст текст текст текст текст
+            span.servicesCards__footer
+              span.btn.btn--sm Подробнее
+              span.servicesCards__price
+                |от 4 500 руб.#[br]
+                |за 1 час

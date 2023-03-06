@@ -110,6 +110,9 @@ img[data-srcset] {
     background: $grey6;
     padding: 65px 0;
     @include fullWidth();
+    @include mobile() {
+      padding: 30px 0;
+    }
   }
 
   &__content {
