@@ -1,0 +1,31 @@
+.advantages.block(style='--slides-count: 5;')
+  .content.block__content.navigationPlaceholder
+    h2 Почему стоит обратиться к нам?
+
+  .navigation.navigation--block
+    .navigation__button.navigation__button--prev: +the_svg('arrow')
+    .navigation__text #[b 1] / #[span 5]
+    .navigation__button.navigation__button--next: +the_svg('arrow')
+
+  .advantages__container
+    .advantages__main
+      .advantages__banner
+        .advantages__banner-head1 30+ лет
+        .advantages__banner-head2 успешной работы
+        .advantages__text С 1992 года на рынке профессиональных услуг
+        a.advantages__link(href='#')
+          | О компании
+          +the_svg('arrow')
+        .advantages__button
+          a.btn.btn--red.btn--sm(href='#') Скачать презентацию
+
+    .advantages__aside
+      .advantages__slider
+        .advantages__slides
+          each i in [1,2,3,4,5]
+            .advantages__slide(class=(i === 1 ? 'advantages__slide--active' : ''))
+              .advantages__card
+                .advantages__icon: img(src='https://via.placeholder.com/50x50.png')
+                .advantages__head ТОП-25
+                .advantages__text ведущих аудиторско-консалтинговых групп России по итогам 2021 г.
+

@@ -1,0 +1,164 @@
+$advantages-card-width: 250px;
+
+.advantages {
+  $this: &;
+
+  position: relative;
+
+  &__container {
+    display: flex;
+  }
+
+  &__main {
+    width: 360px;
+    margin-right: 30px;
+    flex-shrink: 0;
+  }
+
+  &__banner {
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+    background: $grey6;
+    padding: 25px 35px;
+  }
+
+  &__banner-head1 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1;
+    color: $red;
+  }
+
+  &__banner-head2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: $red;
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    color: $blue;
+    display: flex;
+    align-items: center;
+    margin: 35px 0;
+    font-size: 16px;
+    text-decoration: none;
+    @include mobile() {
+      font-size: 14px;
+    }
+
+    svg {
+      width: 25px;
+      height: 25px;
+      margin-left: 8px;
+    }
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  &__aside {
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__slider {
+    padding-right: $advantages-card-width;
+    position: relative;
+    @include mobile() {
+      padding: 0;
+      margin: -10px;
+    }
+  }
+
+  &__slides {
+    display: flex;
+    margin-right: calc(-100% / (var(--slides-count) - 1));
+    @include mobile() {
+      margin: 0;
+      width: 100%;
+    }
+
+    &--inited {
+      #{$this}__slide {
+        position: absolute;
+
+        &--active {
+          z-index: 10;
+          position: relative;
+
+          #{$this}__counter {
+            color: rgba($blue, .2);
+          }
+        }
+
+        &--out {
+          transform: translateX(-100px);
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  &__slide {
+    flex: 1;
+    min-width: 0;
+    position: relative;
+    transition: left .25s ease-in, opacity .1s ease-in, transform .1s ease-in;
+
+    @include mobile() {
+      padding: 10px;
+      flex: unset;
+      flex-shrink: 0;
+      min-width: unset;
+      width: 100%;
+    }
+
+    @for $i from 1 through 10 {
+      &:nth-child(#{$i}) {
+        z-index: #{10 - $i};
+      }
+    }
+  }
+
+  &__card {
+    width: $advantages-card-width;
+    position: relative;
+    padding: 0 15px 30px 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    min-height: 360px;
+    @include mobile() {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      padding: 14px 15px;
+      box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &__icon {
+    height: 130px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__head {
+    font-size: 22px;
+    font-weight: 600;
+    color: $blue;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-size: 16px;
+    @include mobile() {
+      font-size: 14px;
+    }
+  }
+}

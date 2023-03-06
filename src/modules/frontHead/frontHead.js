@@ -13,7 +13,7 @@ if ($slides.length) {
   });
 
   Breakpoints.on('lg', 'enter', () => {
-    requestAnimationFrame(() => {
+    setTimeout(() => {
       destroyCards = initStackedCards({
         $slides,
         $slidesContainer: $('.frontHead__slides'),
@@ -23,7 +23,7 @@ if ($slides.length) {
         activeClass:      'frontHead__slide--active',
         outClass:         'frontHead__slide--out'
       });
-    })
+    }, 1000);
   });
 
   initSlider('.frontHead__slider', ($el) => ({

@@ -1,3 +1,5 @@
+$frontHead-card-width: 730px;
+
 .frontHead {
   $this: &;
 
@@ -15,9 +17,15 @@
     }
   }
 
+  &__slider {
+    padding-right: $frontHead-card-width;
+  }
+
   &__slides {
     display: flex;
     position: relative;
+    margin-right: calc(-100% / (var(--slides-count) - 1));
+
 
     &--inited {
       #{$this}__slide {
@@ -41,9 +49,8 @@
   }
 
   &__slide {
-    flex-shrink: 0;
-    z-index: 1;
-    width: 60px;
+    flex: 1;
+    min-width: 0;
     transition: left .25s ease-in, opacity .1s ease-in, transform .1s ease-in;
 
     @for $i from 1 through 10 {
@@ -71,7 +78,7 @@
     padding: 60px 45px;
     display: flex;
     flex-direction: column;
-    width: 730px;
+    width: $frontHead-card-width;
     cursor: pointer;
     @include anim();
     @include mobile() {

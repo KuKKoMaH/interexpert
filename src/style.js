@@ -61,3 +61,4 @@ import './modules/calc/calc.scss';
 import './modules/list/list.scss';
 import './modules/consultForm/consultForm.scss';
 import './modules/process/process.scss';
+import './modules/advantages/advantages.scss';

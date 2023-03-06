@@ -48,3 +48,4 @@ import './modules/calc/calc.js';
 import './modules/list/list.js';
 import './modules/consultForm/consultForm.js';
 import './modules/process/process.js';
+import './modules/advantages/advantages.js';
