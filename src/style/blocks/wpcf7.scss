@@ -13,6 +13,14 @@
 
 
 .invalid, .unaccepted {
+  .wpcf7-not-valid-tip {
+    display: block;
+    font-size: 12px;
+    padding-left: 24px;
+    margin-top: 2px;
+    color: $red;
+  }
+
   .wpcf7-response-output {
     display: block;
     text-align: center;
@@ -24,6 +32,7 @@
 
 .wpcf7-content {
   @include anim();
+
   .sent & {
     opacity: 0;
     pointer-events: none;

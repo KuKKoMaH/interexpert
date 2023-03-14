@@ -6,6 +6,7 @@
   "scripts": {
     "watch": "webpack serve --liveReload",
     "build": "rm -fr dist && NODE_ENV=production webpack --progress",
+    "screenshots": "node make_screenshots.js",
     "g": "node generate_module.js"
   },
   "dependencies": {

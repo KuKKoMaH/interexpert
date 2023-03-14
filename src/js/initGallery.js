@@ -92,11 +92,3 @@ const initGallery = ({ $items }) => {
 };
 
 export default initGallery;
-
-const initGalleries = () => {
-  $('.gallery').each((i, el) => {
-    initGallery({ $items: $(el).find('.gallery__item') });
-  });
-};
-initGalleries();
-window.INIT_GALLERIES = initGalleries;

@@ -56,7 +56,7 @@ $advantages-card-width: 250px;
     color: $blue;
     display: flex;
     align-items: center;
-    margin: 35px 0;
+    margin: 35px 0 0;
     font-size: 16px;
     text-decoration: none;
     @include mobile() {
@@ -73,6 +73,10 @@ $advantages-card-width: 250px;
     &:hover {
       color: $red;
     }
+  }
+
+  &__button {
+    margin-top: 35px;
   }
 
   &__aside {
@@ -167,6 +171,13 @@ $advantages-card-width: 250px;
     @include mobile() {
       height: 65px;
       align-items: flex-start;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      max-height: 100%;
+      width: auto;
     }
   }
 

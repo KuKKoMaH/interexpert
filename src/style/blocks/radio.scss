@@ -1,88 +1,100 @@
 .radio {
-  position: relative;
   display: flex;
   align-items: center;
-  cursor: pointer;
-  min-height: 24px;
-  background: $white;
-  border: 2px solid $white;
-  box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.25);
-  padding: 11px 40px 11px 17px;
-  border-radius: 39px;
+  flex-wrap: wrap;
+  margin: -8px;
+
+  &__item {
+    padding: 8px;
+    width: 50%;
+
+    label {
+      position: relative;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      min-height: 24px;
+      background: $white;
+      border: 2px solid $white;
+      box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.25);
+      padding: 11px 40px 11px 17px;
+      border-radius: 39px;
 
 
-  &:has(input:checked) {
-    border: 2px solid $red;
-  }
+      &:has(input:checked) {
+        border: 2px solid $red;
+      }
 
-  @include mobile() {
-    min-height: 20px;
-  }
+      @include mobile() {
+        min-height: 20px;
+      }
 
-  > input {
-    display: none
-  }
+      > input {
+        display: none
+      }
 
-  > span {
-    display: block;
-    font-size: 16px;
-    color: $grey2;
+      > span {
+        display: block;
+        font-size: 16px;
+        color: $grey2;
 
-    &:before, &:after {
-      content: '';
-      position: absolute;
-      @include anim();
-      top: 50%;
-      transform: translateY(-50%);
-    }
+        &:before, &:after {
+          content: '';
+          position: absolute;
+          @include anim();
+          top: 50%;
+          transform: translateY(-50%);
+        }
 
-    &:before {
-      right: 13px;
-      width: 24px;
-      height: 24px;
-      border: 2px solid $grey3;
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
+        &:before {
+          right: 13px;
+          width: 24px;
+          height: 24px;
+          border: 2px solid $grey3;
+          border-radius: 50%;
+          flex-shrink: 0;
+        }
 
-    &:after {
-      opacity: 0;
-      width: 9px;
-      height: 18px;
-      right: 17px;
-      margin-top: -4px;
-      border: 2px solid $red;
-      border-top: 0;
-      border-left: 0;
-      transform: translateY(-50%) rotate(45deg);
-      @include anim();
-    }
-  }
+        &:after {
+          opacity: 0;
+          width: 9px;
+          height: 18px;
+          right: 17px;
+          margin-top: -4px;
+          border: 2px solid $red;
+          border-top: 0;
+          border-left: 0;
+          transform: translateY(-50%) rotate(45deg);
+          @include anim();
+        }
+      }
 
-  a {
-    text-decoration: underline;
+      a {
+        text-decoration: underline;
 
-    &:hover {
-      text-decoration: none;
-    }
-  }
+        &:hover {
+          text-decoration: none;
+        }
+      }
 
-  input:checked ~ span {
-    &:before {
-      //background: $green-dark;
-      //border-color: $green-dark;
+      input:checked ~ span {
+        &:before {
+          //background: $green-dark;
+          //border-color: $green-dark;
 
-    }
+        }
 
-    &:after {
-      opacity: 1;
-    }
-  }
+        &:after {
+          opacity: 1;
+        }
+      }
 
-  &:hover {
-    > span {
-      &:before {
-        //border-color: $green;
+      &:hover {
+        > span {
+          &:before {
+            //border-color: $green;
+          }
+        }
       }
     }
   }
