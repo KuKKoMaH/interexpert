@@ -71,3 +71,4 @@ import './modules/results/results.scss';
 import './modules/price/price.scss';
 import './modules/pricelist/pricelist.scss';
 import './modules/popup/popup.scss';
+import './modules/teamPopup/teamPopup.scss';

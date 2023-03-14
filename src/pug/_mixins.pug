@@ -2,3 +2,10 @@ mixin the_svg(svgIcon, fileName)
   svg(width=24 height=24)&attributes(attributes)
     use(xlink:href=`img/${fileName ? fileName + '.sprite' : 'sprite'}.svg#` + svgIcon + '-usage')
 
+mixin popup(id)
+  .popup.micromodal-slide(id=id aria-hidden="true")
+    .popup__overlay(tabindex="-1" data-micromodal-close)
+      .popup__container(role="dialog" aria-modal="true")
+        button.popup__close(data-micromodal-close): +the_svg('x')
+        if block
+          block

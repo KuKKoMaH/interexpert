@@ -58,3 +58,4 @@ import './modules/results/results.js';
 import './modules/price/price.js';
 import './modules/pricelist/pricelist.js';
 import './modules/popup/popup.js';
+import './modules/teamPopup/teamPopup.js';
