@@ -64,14 +64,8 @@
     padding: 60px 55px;
     border-radius: 18px;
     @include mobile() {
-      padding: 60px 20px 25px;
+      padding: 40px 20px 25px;
     }
-  }
-
-  &__form {
-    width: 360px;
-    max-width: 100%;
-    margin: 0 auto;
   }
 
   &__iframe {
@@ -121,16 +115,6 @@
       @include anim();
 
     }
-  }
-
-  &__accept {
-    margin-bottom: 20px;
-  }
-
-  &__policy {
-    max-width: 700px;
-    padding: 1em;
-    background: $white;
   }
 }
 

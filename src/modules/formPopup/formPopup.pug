@@ -1,0 +1,23 @@
++popup('callback-popup')
+  .formPopup
+    .content
+      h2  Заголовок заголовок заголовок заголовок заголовок
+      p Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст
+
+    .formPopup__row
+      .formPopup__col
+        .input: input.input__input(placeholder='ФИО')
+      .formPopup__col
+        .input: input.input__input(placeholder='Телефон')
+    .formPopup__row
+      .formPopup__col
+        .input: input.input__input(placeholder='Должность')
+      .formPopup__col
+        .input: input.input__input(placeholder='Emailелефон')
+    .formPopup__footer
+      .formPopup__button
+        button.btn.btn--red.btn--block Оставить заявку
+      .formPopup__confirm
+        label.checkbox
+          input(type='checkbox')
+          span Я даю согласие на обработку #[a(href='#') персональных данных]

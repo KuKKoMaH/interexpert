@@ -4,6 +4,7 @@ $process-card-width: 550px;
   $this: &;
 
   position: relative;
+  z-index: 1;
 
   &__slider {
     padding-right: $process-card-width;

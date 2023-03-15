@@ -3,6 +3,7 @@ $frontHead-card-width: 730px;
 .frontHead {
   $this: &;
 
+  margin: 0;
   padding: 95px 0;
   background-size: cover;
   background-position: 50% 50%;
@@ -19,13 +20,18 @@ $frontHead-card-width: 730px;
 
   &__slider {
     padding-right: $frontHead-card-width;
+    @include mobile() {
+      padding: 0;
+    }
   }
 
   &__slides {
     display: flex;
     position: relative;
     margin-right: calc(-100% / (var(--slides-count) - 1));
-
+    @include mobile() {
+      margin: 0;
+    }
 
     &--inited {
       #{$this}__slide {
@@ -52,6 +58,11 @@ $frontHead-card-width: 730px;
     flex: 1;
     min-width: 0;
     transition: left .25s ease-in, opacity .1s ease-in, transform .1s ease-in;
+    @include mobile() {
+      flex: auto;
+      flex-shrink: 0;
+      min-width: 0;
+    }
 
     @for $i from 1 through 10 {
       &:nth-child(#{$i}) {

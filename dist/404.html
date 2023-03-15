@@ -7,7 +7,7 @@
     <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no">
     <!--link(rel="stylesheet" media="all" href="style.css")-->
     <!--link(rel="shortcut icon" href="/favicon.ico")-->
-  <link href="style.css?1678788144494" rel="stylesheet"></head>
+  <link href="style.css?1678826579521" rel="stylesheet"></head>
   <body onunload="">
     <header class="header">
       <div class="header__top">
@@ -442,7 +442,6 @@
         </div>
       </div>
     </footer>
-    <!--include ../modules/photoswipe/photoswipe-->
     <div class="popup micromodal-slide" id="callback-popup" aria-hidden="true">
       <div class="popup__overlay" tabindex="-1" data-micromodal-close>
         <div class="popup__container" role="dialog" aria-modal="true">
@@ -451,67 +450,50 @@
               <use xlink:href="img/sprite.svg#x-usage"></use>
             </svg>
           </button>
-          <div class="popup__form">
-            <form>
-              <div class="form">
-                <div class="form__title">Обратный звонок</div>
-                <div class="form__text">Не следует, однако забывать, что дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке дальнейших направлений развития. Задача организации.</div>
-                <div class="form__content">
-                  <label class="input">
-                    <div class="input__label">Имя</div>
-                    <label class="input__input input__input--rightTop">
-                      <input>
-                    </label>
-                  </label>
-                  <label class="input">
-                    <div class="input__label">Ваш телефон</div>
-                    <div class="input__input input__input--rightTop">
-                      <input type="tel">
-                    </div>
-                  </label>
-                  <div class="file">
-                    <input type="file">
-                    <svg width="24" height="24">
-                      <use xlink:href="img/sprite.svg#file-usage"></use>
-                    </svg><span class="file__name">Прикрепите файл</span>
-                  </div>
-                </div>
-                <div class="form__button">
-                  <button class="btn btn--black btn--rightTop">Получить точный расчет кровли</button>
+          <div class="formPopup">
+            <div class="content">
+              <h2> Заголовок заголовок заголовок заголовок заголовок</h2>
+              <p>Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст</p>
+            </div>
+            <div class="formPopup__row">
+              <div class="formPopup__col">
+                <div class="input">
+                  <input class="input__input" placeholder="ФИО">
                 </div>
               </div>
-            </form>
+              <div class="formPopup__col">
+                <div class="input">
+                  <input class="input__input" placeholder="Телефон">
+                </div>
+              </div>
+            </div>
+            <div class="formPopup__row">
+              <div class="formPopup__col">
+                <div class="input">
+                  <input class="input__input" placeholder="Должность">
+                </div>
+              </div>
+              <div class="formPopup__col">
+                <div class="input">
+                  <input class="input__input" placeholder="Emailелефон">
+                </div>
+              </div>
+            </div>
+            <div class="formPopup__footer">
+              <div class="formPopup__button">
+                <button class="btn btn--red btn--block">Оставить заявку</button>
+              </div>
+              <div class="formPopup__confirm">
+                <label class="checkbox">
+                  <input type="checkbox"><span>Я даю согласие на обработку <a href="#">персональных данных</a></span>
+                </label>
+              </div>
+            </div>
           </div>
-          <!--.popup__iframe-->
-          <!--iframe(allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)-->
-          <!--.popup__image(style='background-image: url(' + require('src/modules/popup/img/img.jpg') + ')')-->
-          <!--.popup__content.content-->
-          <!--  h5 Оставьте заявку-->
-          <!--  p Оставьте ваши контактные данные и наши менеджеры свяжутся с вами в ближайшее время-->
-          <!--  .input-->
-          <!--    input(placeholder="ФИО")-->
-          <!--  .input-->
-          <!--    input(placeholder="Организация")-->
-          <!--  .input-->
-          <!--    input(placeholder="E-mail")-->
-          <!--  .input-->
-          <!--    input(placeholder="Телефон" type="tel")-->
-          <!---->
-          <!--  .popup__accept-->
-          <!--    label.checkbox-->
-          <!--      input(type='checkbox')-->
-          <!--      span Согласен(а) на обработку моих #[a(href='#') персональных данных]-->
-          <!---->
-          <!--  button.btn Оставить заявку-->
-          <!---->
-          <!--  .popup__success-->
-          <!--    span.-->
-          <!--      Спасибо!<br/>-->
-          <!--      Ваша заявка отправлена.<br/>-->
-          <!--      Скоро с Вами свяжется специалист.-->
         </div>
       </div>
     </div>
+    <!--include ../modules/photoswipe/photoswipe-->
     <!--include ../modules/popup/popup-discount-->
     <!--include ../modules/popup/popup-iframe-->
     <!--include ../modules/popup/popup-order-->

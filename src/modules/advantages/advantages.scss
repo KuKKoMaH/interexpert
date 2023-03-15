@@ -4,6 +4,7 @@ $advantages-card-width: 250px;
   $this: &;
 
   position: relative;
+  z-index: 1;
 
   &__container {
     display: flex;
