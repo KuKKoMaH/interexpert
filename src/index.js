@@ -61,3 +61,4 @@ import './modules/pricelist/pricelist.js';
 import './modules/popup/popup.js';
 import './modules/teamPopup/teamPopup.js';
 import './modules/formPopup/formPopup.js';
+import './modules/search/search.js';

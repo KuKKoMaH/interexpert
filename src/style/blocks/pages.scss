@@ -1,0 +1,25 @@
+.pages {
+  $this: &;
+
+  margin-top: 55px;
+  @include mobile() {
+    margin-top: 30px;
+  }
+
+  .page-numbers {
+    margin-right: 5px;
+
+    &.current {
+      font-weight: 600;
+    }
+  }
+
+  a.page-numbers {
+    color: $blue;
+
+    &:hover {
+      color: $red;
+    }
+  }
+}
+

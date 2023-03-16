@@ -1,0 +1,12 @@
+.search.block
+  form.search__head
+    input.search__input
+    .search__button: button.btn.btn--outline Найти
+  .search__results
+    each i in [1,2,3,4,5]
+      .search__result
+        .search__title Заголовок
+        .search__text Текст текст текст  текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст/
+        a.search__link(href='#')
+          | Перейти
+          +the_svg('arrow')
