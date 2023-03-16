@@ -4,6 +4,7 @@ import './js/scriptLoader';
 import './js/breakpoints';
 import './js/init';
 import './js/initGallery';
+import './js/initMap';
 import './style';
 import './sprites';
 
