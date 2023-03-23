@@ -18,6 +18,12 @@
         &__content {
           max-height: none;
         }
+
+        &__icon {
+          svg {
+            transform: rotate(270deg);
+          }
+        }
       }
     }
   }

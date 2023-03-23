@@ -1,5 +1,5 @@
 mixin the_svg(svgIcon, fileName)
-  svg(width=24 height=24)&attributes(attributes)
+  svg&attributes(attributes)
     use(xlink:href=`img/${fileName ? fileName + '.sprite' : 'sprite'}.svg#` + svgIcon + '-usage')
 
 mixin popup(id)

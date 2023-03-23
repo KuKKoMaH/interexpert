@@ -19,8 +19,12 @@
   }
 
   &__content {
-    max-width: 625px;
+    max-width: 750px;
     flex: 1;
+  }
+
+  &__img + &__content {
+    max-width: 625px;
   }
 
   &__title {

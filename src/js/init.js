@@ -3,7 +3,7 @@ import IMask from 'imask';
 // import './initMap';
 import './initPopups';
 import "src/js/initGallery";
-
+import initGallery from "src/js/initGallery";
 
 const $share = $('.share');
 if ($share.length) {
@@ -51,4 +51,8 @@ $('.file').each((i, el) => {
     const files = $(this)[0].files;
     $name.text(files.length ? files[0].name : originalText);
   });
+});
+
+$('[data-gallery]').each((i, el) => {
+  initGallery({ $items: $(el).find('[data-gallery-item]') });
 });

@@ -30,6 +30,10 @@
     }
   }
 
+  &__name {
+    min-width: 0;
+  }
+
   &__price {
     font-size: 22px;
     font-weight: 600;

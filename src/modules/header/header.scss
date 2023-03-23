@@ -156,7 +156,7 @@
         color: $black;
 
         &:hover {
-          text-decoration: underline;
+          color: $blue;
         }
       }
 
@@ -183,6 +183,25 @@
               > a {
                 font-size: 16px;
                 font-weight: 500;
+                display: flex;
+                align-items: center;
+
+                &:hover {
+                  svg {
+                    opacity: 1;
+                    transform: none;
+                  }
+                }
+
+                svg {
+                  width: 24px;
+                  height: 24px;
+                  margin-left: 10px;
+                  color: currentColor;
+                  opacity: 0;
+                  transform: translateX(-5px);
+                  @include anim();
+                }
               }
 
               > ul {

@@ -16,16 +16,22 @@ header.header
         ul
           li.menu-item-has-children
             a(href='#')
-              |О компании
+              | О компании
               +the_svg('chevrone')
             .header__submenu
               .c
                 ul
                   li
                     ul
-                      li: a(href='#') О нас
-                      li: a(href='#') Наша команда
-                      li: a(href='#') Рейтинги и рэнкинги
+                      li: a(href='#')
+                        | О нас
+                        +the_svg('arrow')
+                      li: a(href='#')
+                        | Наша команда
+                        +the_svg('arrow')
+                      li: a(href='#')
+                        | Рейтинги и рэнкинги
+                        +the_svg('arrow')
                   li
                     ul
                       li: a(href='#') Банки-партнёры
@@ -39,7 +45,7 @@ header.header
 
           li.menu-item-has-children
             a(href='#')
-              |Услуги
+              | Услуги
               +the_svg('chevrone')
             .header__submenu
               .c
@@ -108,7 +114,7 @@ header.header
 
           li.menu-item-has-children
             a(href='#')
-              |Пресс-центр
+              | Пресс-центр
               +the_svg('chevrone')
             .header__submenu
               .c

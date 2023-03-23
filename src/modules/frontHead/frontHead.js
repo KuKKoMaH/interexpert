@@ -40,5 +40,6 @@ if ($slides.length) {
     // touchEventsTarget: 'wrapper',
     slidesPerView: 1,
     spaceBetween:  20,
+    autoHeight: true,
   }), { sm: true, lg: false });
 }
