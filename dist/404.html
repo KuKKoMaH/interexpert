@@ -7,15 +7,18 @@
     <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no">
     <!--link(rel="stylesheet" media="all" href="style.css")-->
     <!--link(rel="shortcut icon" href="/favicon.ico")-->
-  <link href="style.css?1679225884752" rel="stylesheet"></head>
+  <link href="style.css?1680033762187" rel="stylesheet"></head>
   <body onunload="">
+    <div class="header__placeholder"></div>
     <header class="header">
       <div class="header__top">
         <div class="c"><a class="header__logo" href="#"><img src="img/img_logo.svg"></a>
           <div class="header__phones">
             <svg>
               <use xlink:href="img/sprite.svg#phone-usage"></use>
-            </svg><a class="header__phone" href="#">+7 (495) 777-12-70</a><a class="header__phone" href="#">+7 (495) 777-12-71</a>
+            </svg><a class="header__phone" href="#">
+              <div class="header__phone-label">Позвонить</div>+7 (495) 777-12-70</a><a class="header__phone" href="#">
+              <div class="header__phone-label">Позвонить</div>+7 (495) 777-12-71</a>
           </div>
           <div class="header__btn">
             <button class="btn" data-micromodal-trigger="callback-popup">Оставить заявку</button>
@@ -309,6 +312,7 @@
         </div>
       </div>
     </header>
+    <div class="headerMobile__placeholder"></div>
     <div class="headerMobile">
       <div class="headerMobile__top">
         <div class="c"><a class="headerMobile__logo" href="#"><img src="img/img_logo.svg"></a>
@@ -451,6 +455,12 @@
         </div>
       </div>
     </footer>
+    <!--include ../modules/cookie/cookie-->
+    <button class="toTop">
+      <svg>
+        <use xlink:href="img/sprite.svg#arrow-usage"></use>
+      </svg>
+    </button>
     <div class="popup micromodal-slide" id="callback-popup" aria-hidden="true">
       <div class="popup__overlay" tabindex="-1" data-micromodal-close>
         <div class="popup__container" role="dialog" aria-modal="true">

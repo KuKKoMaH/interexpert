@@ -1,10 +1,21 @@
 .header {
   $this: &;
 
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $white;
   z-index: 3;
   @include mobile() {
     display: none;
+  }
+
+  &__placeholder {
+    height: 169px;
+    @include mobile() {
+      display: none;
+    }
   }
 
   &__top {
@@ -36,6 +47,7 @@
   }
 
   &__phone {
+    position: relative;
     color: $black;
     font-weight: 600;
     display: block;
@@ -43,12 +55,34 @@
     margin-bottom: 4px;
 
     &:hover {
-      text-decoration: underline;
+      color: $red;
+
+      #{$this}__phone-label {
+        color: $black;
+        opacity: 1;
+      }
     }
 
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  &__phone-label {
+    pointer-events: none;
+    opacity: 0;
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 24px;
+    font-size: 10px;
+    font-weight: 400;
+    background: $grey4;
+    padding: 4px 12px;
+    border-radius: 29px;
+    user-select: none;
+    @include anim();
   }
 
   &__btn {

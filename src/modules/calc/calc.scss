@@ -133,6 +133,12 @@
     &:before {
       border-radius: 18px;
     }
+
+    &:hover {
+      #{$this}__icon {
+        color: $red;
+      }
+    }
   }
 
   &__head {
@@ -159,6 +165,7 @@
     color: $blue;
     margin-left: 30px;
     flex-shrink: 0;
+    @include anim();
 
     svg {
       display: block;

@@ -62,3 +62,4 @@ import './modules/popup/popup.js';
 import './modules/teamPopup/teamPopup.js';
 import './modules/formPopup/formPopup.js';
 import './modules/search/search.js';
+import './modules/cookie/cookie.js';

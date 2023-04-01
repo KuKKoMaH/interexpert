@@ -1,5 +1,5 @@
 .process.block(style='--slides-count: 5;')
-  .content.block__content.navigationPlaceholder
+  .content.block__content.block__content--navigation
     h2 Как мы работаем?
 
   .navigation.navigation--block
@@ -12,11 +12,13 @@
       each i in [1,2,3,4,5]
         .process__slide(class=(i === 1 ? 'process__slide--active' : ''))
           .process__card
-            .process__icon: img(src='https://via.placeholder.com/65x65.png')
+            .process__icon: img(src='https://placehold.jp/65x65.png')
             .process__content
               .content
                 h6 Запрос документов
                 p Получаем от заказчика необходимые документы, обсуждаем цели, определяем вид объекта и объем прав.
+                if(i === 2)
+                  p Получаем от заказчика необходимые документы, обсуждаем цели, определяем вид объекта и объем прав.
               a.process__link(href='#')
                 |Начать сотрудничество
                 +the_svg('arrow')

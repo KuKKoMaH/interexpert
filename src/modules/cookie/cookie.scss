@@ -1,0 +1,38 @@
+.cookie {
+  $this: &;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: $grey6;
+  padding: 25px 0;
+  z-index: 4;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    @include mobile() {
+      font-size: 12px;
+    }
+  }
+
+  &__head {
+    font-size: 18px;
+    font-weight: 600;
+    color: $blue;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    margin-bottom: 5px;
+  }
+
+  &__aside {
+    margin-left: auto;
+    padding-left: 20px;
+    flex: 1;
+    max-width: 200px;
+  }
+}

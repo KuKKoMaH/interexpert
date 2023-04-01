@@ -9,3 +9,14 @@ mixin popup(id)
         button.popup__close(data-micromodal-close): +the_svg('x')
         if block
           block
+
+mixin form()
+  .form
+    .form__content
+      if block
+        block
+    .form__overlay
+      .form__icon: +the_svg('success')
+      .form__title Ваша заявка #[br]успешно отправлена!
+      .form__text В ближайшее время с Вами свяжется наш менеджер.
+

@@ -3,7 +3,6 @@ import scriptLoader from '../js/scriptLoader';
 const YANDEX_MAP_URL = 'https://api-maps.yandex.ru/2.1/?lang=ru_RU&ver=1&onload=INIT_MAP';
 const $maps = $('.map');
 if ($maps.length) scriptLoader(YANDEX_MAP_URL);
-console.log($maps)
 // const destroyMap = () => {
 //   if (map) {
 //     map.destroy();

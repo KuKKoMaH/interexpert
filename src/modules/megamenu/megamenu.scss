@@ -8,6 +8,8 @@
   height: 100%;
   z-index: 3;
   overflow: hidden auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
   background: rgba(0, 0, 0, 0.25);
   @include hidden();
   @include anim();

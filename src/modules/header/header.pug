@@ -1,11 +1,16 @@
+.header__placeholder
 header.header
   .header__top
     .c
       a.header__logo(href='#'): img(src=require('src/img/logo.svg'))
       .header__phones
         +the_svg('phone')
-        a.header__phone(href='#') +7 (495) 777-12-70
-        a.header__phone(href='#') +7 (495) 777-12-71
+        a.header__phone(href='#')
+          .header__phone-label Позвонить
+          | +7 (495) 777-12-70
+        a.header__phone(href='#')
+          .header__phone-label Позвонить
+          | +7 (495) 777-12-71
       .header__btn
         button.btn(data-micromodal-trigger='callback-popup') Оставить заявку
       button.header__megamenu-toggle: +the_svg('menu')

@@ -7,15 +7,18 @@
     <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no">
     <!--link(rel="stylesheet" media="all" href="style.css")-->
     <!--link(rel="shortcut icon" href="/favicon.ico")-->
-  <link href="style.css?1679225884752" rel="stylesheet"></head>
+  <link href="style.css?1680033762187" rel="stylesheet"></head>
   <body onunload="">
+    <div class="header__placeholder"></div>
     <header class="header">
       <div class="header__top">
         <div class="c"><a class="header__logo" href="#"><img src="img/img_logo.svg"></a>
           <div class="header__phones">
             <svg>
               <use xlink:href="img/sprite.svg#phone-usage"></use>
-            </svg><a class="header__phone" href="#">+7 (495) 777-12-70</a><a class="header__phone" href="#">+7 (495) 777-12-71</a>
+            </svg><a class="header__phone" href="#">
+              <div class="header__phone-label">Позвонить</div>+7 (495) 777-12-70</a><a class="header__phone" href="#">
+              <div class="header__phone-label">Позвонить</div>+7 (495) 777-12-71</a>
           </div>
           <div class="header__btn">
             <button class="btn" data-micromodal-trigger="callback-popup">Оставить заявку</button>
@@ -309,6 +312,7 @@
         </div>
       </div>
     </header>
+    <div class="headerMobile__placeholder"></div>
     <div class="headerMobile">
       <div class="headerMobile__top">
         <div class="c"><a class="headerMobile__logo" href="#"><img src="img/img_logo.svg"></a>
@@ -582,9 +586,14 @@
           </div>
         </div>
       </div>
-      <div class="block services">
-        <div class="content block__content">
-          <h2>Наши услуги</h2>
+      <div class="services block">
+        <div class="block__content block__content--btn">
+          <div class="block__btn"><a class="btn btn--outline" href="#">Перейти в раздел</a></div>
+          <div class="content">
+            <h2>Наши услуги</h2>
+            <p>test</p>
+            <p>test2</p>
+          </div>
         </div>
         <div class="services__items">
           <div class="services__item"><a class="services__card btnContainer" href="#"><span class="services__img"></span><span class="services__info"><span class="services__name">Аудиторские услуги</span><span class="services__price">от *** *** руб.</span><span class="btn btn--sm">Подробнее</span></span></a></div>
@@ -630,37 +639,50 @@
               <h2>Просто оставьте заявку - Все остальное сделаем мы!</h2>
               <p>Заполните небольшую форму, мы свяжемся с Вами.</p>
             </div>
-            <div class="contactForm__row">
-              <div class="contactForm__input">
-                <div class="input">
-                  <input class="input__input" placeholder="ФИО">
+            <div class="form">
+              <div class="form__content">
+                <div class="contactForm__row">
+                  <div class="contactForm__input">
+                    <div class="input">
+                      <input class="input__input" placeholder="ФИО">
+                    </div>
+                  </div>
+                  <div class="contactForm__input">
+                    <div class="input">
+                      <input class="input__input" placeholder="Телефон">
+                    </div>
+                  </div>
+                </div>
+                <div class="contactForm__row">
+                  <div class="contactForm__input">
+                    <div class="input">
+                      <input class="input__input" placeholder="Должность">
+                    </div>
+                  </div>
+                  <div class="contactForm__input">
+                    <div class="input">
+                      <input class="input__input" placeholder="Email" type="email">
+                    </div>
+                  </div>
+                </div>
+                <div class="contactForm__footer">
+                  <button class="btn btn--red">Оставить заявку</button>
+                  <label class="checkbox">
+                    <input type="checkbox"><span>Я даю согласие на обработку <a href="#">персональных данных</a></span>
+                  </label>
                 </div>
               </div>
-              <div class="contactForm__input">
-                <div class="input">
-                  <input class="input__input" placeholder="Телефон">
+              <div class="form__overlay">
+                <div class="form__icon">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#success-usage"></use>
+                  </svg>
                 </div>
+                <div class="form__title">Ваша заявка <br>успешно отправлена!</div>
+                <div class="form__text">В ближайшее время с Вами свяжется наш менеджер.</div>
               </div>
             </div>
-            <div class="contactForm__row">
-              <div class="contactForm__input">
-                <div class="input">
-                  <input class="input__input" placeholder="Должность">
-                </div>
-              </div>
-              <div class="contactForm__input">
-                <div class="input">
-                  <input class="input__input" placeholder="Email" type="email">
-                </div>
-              </div>
-            </div>
-            <div class="contactForm__footer">
-              <button class="btn btn--red">Оставить заявку</button>
-              <label class="checkbox">
-                <input type="checkbox"><span>Я даю согласие на обработку <a href="#">персональных данных</a></span>
-              </label>
-            </div>
-          </div><img class="contactForm__img" src="https://via.placeholder.com/390x490.png">
+          </div><img class="contactForm__img" src="https://placehold.jp/390x490.png">
         </div>
       </div>
       <div class="block press">
@@ -712,7 +734,7 @@
         </div>
       </div>
       <div class="clients block">
-        <div class="content block__content navigationPlaceholder">
+        <div class="content block__content block__content--navigation">
           <h2>Клиенты</h2>
         </div>
         <div class="navigation navigation--block">
@@ -730,33 +752,33 @@
         </div>
         <div class="clients__slider">
           <div class="clients__slides">
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=1"></div>
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=2"></div>
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=3"></div>
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=4"></div>
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=5"></div>
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=6"></div>
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=7"></div>
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=8"></div>
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=9"></div>
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=0"></div>
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=11"></div>
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=12"></div>
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=13"></div>
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=14"></div>
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=15"></div>
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=16"></div>
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=17"></div>
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=18"></div>
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=19"></div>
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=20"></div>
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=21"></div>
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=22"></div>
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=23"></div>
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=24"></div>
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=25"></div>
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=26"></div>
-            <div class="clients__slide"><img src="https://via.placeholder.com/150x150.png?text=27"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=1"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=2"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=3"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=4"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=5"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=6"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=7"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=8"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=9"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=0"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=11"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=12"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=13"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=14"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=15"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=16"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=17"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=18"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=19"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=20"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=21"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=22"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=23"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=24"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=25"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=26"></div>
+            <div class="clients__slide"><img src="https://placehold.jp/150x150.png?text=27"></div>
           </div>
         </div>
         <div class="block__footer">
@@ -771,7 +793,7 @@
         </div>
       </div>
       <div class="block testimonials">
-        <div class="content block__content navigationPlaceholder">
+        <div class="content block__content block__content--navigation">
           <h2>Отзывы</h2>
         </div>
         <div class="navigation navigation--block">
@@ -887,6 +909,12 @@
         </div>
       </div>
     </footer>
+    <!--include ../modules/cookie/cookie-->
+    <button class="toTop">
+      <svg>
+        <use xlink:href="img/sprite.svg#arrow-usage"></use>
+      </svg>
+    </button>
     <div class="popup micromodal-slide" id="callback-popup" aria-hidden="true">
       <div class="popup__overlay" tabindex="-1" data-micromodal-close>
         <div class="popup__container" role="dialog" aria-modal="true">

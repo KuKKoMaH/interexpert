@@ -95,10 +95,10 @@ export const initStackedCards = (config) => {
   };
   $slides.on('click', onClickSlide);
 
-  $slidesContainer.addClass(initedClass);
   let minHeight = 0;
   $slides.each((i, el) => minHeight = Math.max(minHeight, el.clientHeight));
   $slidesContainer.css('min-height', minHeight);
+  $slidesContainer.addClass(initedClass);
 
   const updateLayout = () => {
     if (destroyed) return;

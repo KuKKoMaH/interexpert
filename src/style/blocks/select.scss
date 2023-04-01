@@ -1,48 +1,53 @@
 .selectize {
   $this: &;
 
-
   &-control {
     text-align: left;
-
+    min-width: 220px;
 
     .item {
       flex: 1;
-      display: flex;
-      align-items: center;
+      min-width: 0;
+
+      //display: flex;
+      //align-items: center;
     }
   }
 
   &-input {
     position: relative;
-    height: 40px;
-    //border: 1px solid $gray;
-    padding: 0 45px 0 10px;
+    height: 44px;
+    padding: 12px 40px 12px 20px;
     display: flex;
     align-items: center;
-    font-size: 15px;
-    line-height: (18/15);
+    font-size: 16px;
     cursor: pointer;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
     @include anim();
 
 
     &:before, &:after {
       content: '';
       position: absolute;
-      top: 50%;
-      width: 5px;
-      height: 1px;
-      //background: $gray-dark;
     }
 
     &:before {
-      transform: rotate(45deg);
-      right: 22px;
+      width: 2px;
+      height: 19px;
+      right: 25px;
+      top: 12px;
+      background: $red;
     }
 
     &:after {
-      transform: rotate(-45deg);
-      right: 19px;
+      right: 20px;
+      top: 19px;
+      width: 12px;
+      height: 12px;
+      border-right: 2px solid $red;
+      border-bottom: 2px solid $red;
+      transform: rotate(45deg);
     }
 
     &:hover {
@@ -70,13 +75,14 @@
   &-dropdown {
     position: absolute;
     background: #FFFFFF;
-    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
     //border: 1px solid $gray;
     //border-radius: 4px;
     z-index: 3;
-    margin-top: 2px;
+    margin-top: 4px;
     overflow: hidden;
     min-width: 220px;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
 
     .option {
       min-height: 41px;
@@ -88,7 +94,7 @@
 
       &.active {
         //background: $green-dark;
-        color: $white;
+        color: $red;
       }
 
       //&.selected {
@@ -101,5 +107,8 @@
   &-dropdown-content {
     max-height: 300px;
     overflow: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    padding: 20px 0;
   }
 }

@@ -17,6 +17,30 @@
     }
   }
 
+  &__title {
+    position: relative;
+  }
+
+  &__back {
+    position: absolute;
+    right: 100%;
+    margin-right: 35px;
+    top: 10px;
+    color: $blue;
+    @include anim();
+
+    &:hover {
+      color: $red;
+    }
+
+    svg {
+      transform: rotate(180deg);
+      display: block;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
   &__date {
     margin-top: 40px;
     font-size: 16px;
@@ -37,6 +61,8 @@
       margin-left: -20px;
       margin-right: -20px;
       overflow: auto;
+      overscroll-behavior: contain;
+      -webkit-overflow-scrolling: touch;
       padding: 10px 20px;
     }
   }

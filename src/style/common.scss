@@ -117,11 +117,72 @@ img[data-srcset] {
 
   &__content {
     margin-bottom: 40px;
+
+    &--navigation {
+      &:before {
+        content: '';
+        display: block;
+        float: right;
+        width: 190px;
+        height: 50px;
+        @include mobile() {
+          width: 85px;
+          height: 45px;
+        }
+      }
+
+    }
+
+    &--btn {
+      @include cf();
+      @include mobile() {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__btn {
+    float: right;
+    @include mobile() {
+      float: none;
+      margin-top: 18px;
+      order: 1;
+    }
+  }
+
+  &__filter {
+    display: flex;
+    align-self: flex-start;
+    margin-bottom: 60px;
     @include mobile() {
       margin-bottom: 30px;
     }
   }
 
+  &__filter-icon {
+    width: 44px;
+    height: 44px;
+    background: $blue;
+    border-radius: 50%;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+    flex-shrink: 0;
+
+    svg {
+      width: 30px;
+      height: 30px;
+      color: $white;
+    }
+  }
+
+  &__filter-item {
+    min-width: 280px;
+  }
 
   &__footer {
     margin-top: 30px;
@@ -177,21 +238,6 @@ img[data-srcset] {
 
   &__action {
     padding: 5px 10px;
-  }
-}
-
-
-.navigationPlaceholder {
-  &:before {
-    content: '';
-    display: block;
-    float: right;
-    width: 190px;
-    height: 50px;
-    @include mobile() {
-      width: 85px;
-      height: 45px;
-    }
   }
 }
 
@@ -297,4 +343,39 @@ img[data-srcset] {
 
 .ya-share2 .ya-share2__list .ya-share2__badge {
   background: $blue;
+}
+
+.toTop {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 3;
+  width: 48px;
+  height: 48px;
+  border: 2px solid $blue;
+  color: $blue;
+  background: $white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include anim();
+
+  svg {
+    width: 30px;
+    height: 30px;
+    transform: rotate(-90deg);
+  }
+
+  &:hover {
+    border-color: $red;
+    color: $red;
+  }
+
+  @include mobile() {
+    right: 25px;
+    bottom: 25px;
+    width: 40px;
+    height: 40px;
+  }
 }

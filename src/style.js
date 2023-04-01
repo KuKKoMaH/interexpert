@@ -16,13 +16,13 @@ import "./style/blocks/pages.scss";
 import "./style/blocks/radio.scss";
 import "./style/blocks/select.scss";
 import "./style/blocks/wpcf7.scss";
+import "./style/blocks/form.scss";
 
 import './modules/photoswipe/photoswipe.scss';
 import './modules/photoswipe/default-skin.scss';
 
 import './modules/header/header.scss';
 import './modules/footer/footer.scss';
-import './modules/form/form.scss';
 import './modules/megamenu/megamenu.scss';
 import './modules/headerMobile/headerMobile.scss';
 import './modules/socials/socials.scss';
@@ -75,3 +75,4 @@ import './modules/popup/popup.scss';
 import './modules/teamPopup/teamPopup.scss';
 import './modules/formPopup/formPopup.scss';
 import './modules/search/search.scss';
+import './modules/cookie/cookie.scss';
