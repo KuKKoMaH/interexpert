@@ -92,8 +92,8 @@
 
   &__close {
     position: absolute;
-    right: 32px;
-    top: 32px;
+    right: 12px;
+    top: 12px;
     width: 36px;
     height: 36px;
     z-index: 1;
@@ -109,8 +109,8 @@
     }
 
     svg {
-      width: 26px;
-      height: 26px;
+      width: 22px;
+      height: 22px;
       pointer-events: none;
       @include anim();
 

@@ -37,6 +37,7 @@ $frontHead-card-width: 730px;
     &--inited {
       #{$this}__slide {
         position: absolute;
+        height: 100%;
 
         &--active {
           z-index: 10;
@@ -60,7 +61,6 @@ $frontHead-card-width: 730px;
     flex: 1;
     min-width: 0;
     transition: left .25s ease-in, opacity .1s ease-in, transform .1s ease-in;
-    height: 100%;
     @include mobile() {
       height: auto;
       flex: auto;

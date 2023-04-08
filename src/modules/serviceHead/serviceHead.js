@@ -11,6 +11,8 @@ initSlider('.serviceHead__slider', ($el) => ({
     el:        $el.parents('.serviceHead').find('.pagination')[0],
     clickable: true,
   },
+  loop:         true,
+  loopedSlides: 2,
   // touchEventsTarget: 'wrapper',
   slidesPerView:  1,
   slidesPerGroup: 1,

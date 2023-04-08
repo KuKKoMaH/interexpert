@@ -6,7 +6,8 @@
 
   &__item {
     padding: 8px;
-    width: 50%;
+    min-width: 50%;
+    flex-grow: 1;
 
     label {
       position: relative;

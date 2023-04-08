@@ -47,14 +47,18 @@
   }
 
   &__name {
-    margin-top: auto;
+    //margin-top: auto;
     padding-top: 20px;
     font-weight: 600;
     color: $red;
+    font-size: 18px;
   }
 
   &__position {
     margin-top: 5px;
     font-size: 16px;
+    @include mobile() {
+      font-size: 14px;
+    }
   }
 }

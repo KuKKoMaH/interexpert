@@ -15,6 +15,39 @@ $bottom-height: 38px;
     z-index: 3;
   }
 
+  &--active {
+    #{$this} {
+      &__popup {
+        @include visible();
+        transform: none;
+      }
+
+      &__menu-toggle {
+        .active {
+          display: none;
+        }
+
+        .inactive {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  &--submenu {
+    #{$this} {
+      &__main {
+        position: absolute;
+        transform: translateX(-100%);
+      }
+
+      &__sub {
+        position: static;
+        transform: none;
+      }
+    }
+  }
+
   &__placeholder {
     display: none;
     @include mobile() {
@@ -86,16 +119,21 @@ $bottom-height: 38px;
 
   &__menu-toggle {
     margin-left: auto;
-    display: flex;
-    align-items: center;
-    color: $white;
-    font-size: 11px;
-
+    div {
+      display: flex;
+      align-items: center;
+      color: $white;
+      font-size: 11px;
+    }
 
     svg {
       width: 20px;
       height: 20px;
       margin-left: 5px;
+    }
+
+    .inactive {
+      display: none;
     }
   }
 
@@ -105,8 +143,9 @@ $bottom-height: 38px;
 
     position: fixed;
     top: $top-height + $bottom-height;
-    height: calc(100% - #{$top-height} + #{$bottom-height});
-    overflow: auto;
+    height: calc(100% - #{$top-height} - #{$bottom-height});
+    overflow-x: hidden;
+    overflow-y: auto;
     overscroll-behavior: contain;
     -webkit-overflow-scrolling: touch;
     bottom: 0;
@@ -122,6 +161,52 @@ $bottom-height: 38px;
     &--active {
       @include visible();
       transform: none;
+    }
+  }
+
+  &__container {
+    @include anim(.2s);
+  }
+
+  &__main {
+    top: 20px;
+    left: 0;
+    width: 100%;
+    @include anim(.2s);
+  }
+
+  &__sub {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    transform: translateX(100%);
+    @include anim(.2s);
+  }
+
+  &__submenu {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__submenu-head {
+    height: 68px;
+    align-items: center;
+    display: flex;
+    color: $blue;
+    font-weight: 600;
+    font-size: 18px;
+    width: 100%;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      color: $red;
+      transform: rotate(90deg);
     }
   }
 
@@ -144,54 +229,68 @@ $bottom-height: 38px;
 
   &__menu {
     margin-bottom: 30px;
+  }
 
-    ul, li {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      line-height: 1.2;
-      position: static;
+  &__menu-item {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: $blue;
+    border-bottom: 1px solid $grey3;
+
+    &:last-child {
+      border: 0;
     }
 
-    > ul {
-      > li {
-        > a {
-          height: 70px;
-          display: flex;
-          align-items: center;
-          text-decoration: none;
-          font-size: 18px;
-          font-weight: 600;
-          color: $blue;
+    svg {
+      transform: rotate(-90deg);
+      width: 30px;
+      height: 30px;
+      color: $red;
+      margin-left: auto;
+    }
+  }
 
-          svg {
-            transform: rotate(-90deg);
-            width: 30px;
-            height: 30px;
-            color: $red;
-            margin-left: auto;
-          }
-        }
+  &__submenu-item {
+    position: relative;
+    display: block;
+    padding: 15px 50px 15px 0;
+    font-size: 16px;
+    color: $black;
+    text-decoration: none;
 
-        border-bottom: 1px solid $grey3;
-
-        &:last-child {
-          border: 0;
-        }
-
-        > ul {
-          position: absolute;
-          width: 100%;
-          left: 100%;
-          top: 0;
-          background: $white;
-          min-height: 100%;
-
-          > li {
-
-          }
-        }
+    &:nth-child(2n) {
+      &:before {
+        background: $grey6;
       }
+
+      svg {
+        color: $white;
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100vw;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+
+    svg {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 24px;
+      color: $grey6;
     }
   }
 

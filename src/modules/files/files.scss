@@ -28,5 +28,17 @@
 
   &__aside {
     margin-left: auto;
+    padding-left: 15px;
+
+    @include mobile() {
+      .btn {
+        span {
+        display: none;
+        }
+        svg {
+          margin: 0;
+        }
+      }
+    }
   }
 }

@@ -7,7 +7,7 @@
     <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no">
     <!--link(rel="stylesheet" media="all" href="style.css")-->
     <!--link(rel="shortcut icon" href="/favicon.ico")-->
-  <link href="style.css?1680033762187" rel="stylesheet"></head>
+  <link href="style.css?1680726374120" rel="stylesheet"></head>
   <body onunload="">
     <div class="header__placeholder"></div>
     <header class="header">
@@ -321,80 +321,155 @@
       </div>
       <div class="headerMobile__bottom">
         <div class="c"><a class="headerMobile__phone" href="#">+7 (495) 777-12-70</a>
-          <button class="headerMobile__menu-toggle">Меню
-            <svg>
-              <use xlink:href="img/sprite.svg#menu-usage"></use>
-            </svg>
+          <button class="headerMobile__menu-toggle">
+            <div class="active">Меню
+              <svg>
+                <use xlink:href="img/sprite.svg#menu-usage"></use>
+              </svg>
+            </div>
+            <div class="inactive">Закрыть
+              <svg>
+                <use xlink:href="img/sprite.svg#x-usage"></use>
+              </svg>
+            </div>
           </button>
         </div>
       </div>
       <div class="headerMobile__popup">
-        <div class="c">
-          <div class="headerMobile__menu">
-            <ul>
-              <li><a href="#">О компании
+        <div class="headerMobile__container">
+          <div class="headerMobile__main">
+            <div class="c">
+              <div class="headerMobile__menu"><a class="headerMobile__menu-item headerMobile__menu-item--submenu" href="#" data-i="0">О компании
                   <svg>
                     <use xlink:href="img/sprite.svg#chevrone-usage"></use>
-                  </svg></a>
-                <ul>
-                  <li><a href="#">О нас</a></li>
-                  <li><a href="#">Наша команда</a></li>
-                  <li><a href="#">Рейтинги и рэнкинги</a></li>
-                  <li><a href="#">Банки-партнёры</a></li>
-                  <li><a href="#">Клиенты</a></li>
-                  <li><a href="#">Отзывы</a></li>
-                  <li><a href="#">Кейсы</a></li>
-                  <li><a href="#">Раскрытие информации</a></li>
-                  <li><a href="#">Реквизиты</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Услуги
+                  </svg></a><a class="headerMobile__menu-item headerMobile__menu-item--submenu" href="#" data-i="1">Услуги
                   <svg>
                     <use xlink:href="img/sprite.svg#chevrone-usage"></use>
-                  </svg></a>
-                <ul>
-                  <li><a href="#">Аудиторские услуги</a></li>
-                  <li><a href="#">Услуги по МСФО</a></li>
-                  <li><a href="#">Юридические услуги</a></li>
-                  <li><a href="#">Бухгалтерский аутсорсинг</a></li>
-                  <li><a href="#">Бухгалтерский и налоговый консалтинг</a></li>
-                  <li><a href="#">Услуги по оценке</a></li>
-                  <li><a href="#">Верификация “зелёных” финансовых инструментов</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Пресс-центр
+                  </svg></a><a class="headerMobile__menu-item headerMobile__menu-item--submenu" href="#" data-i="2">Пресс-центр
                   <svg>
                     <use xlink:href="img/sprite.svg#chevrone-usage"></use>
-                  </svg></a>
-                <ul>
-                  <li><a href="#">Новости</a></li>
-                  <li><a href="#">Статьи</a></li>
-                  <li><a href="#">Вопросы и ответы</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-          </div>
-          <div class="headerMobile__button">
-            <button class="btn btn--red btn--block">Оставить заявку</button>
-          </div>
-          <div class="headerMobile__block">
-            <div class="headerMobile__socials">
-              <div class="headerMobile__social"><a href="#"><img src="img/img_vc.png"></a></div>
-              <div class="headerMobile__social"><a href="#"><img src="img/img_telegram.png"></a></div>
-              <div class="headerMobile__social"><a href="#"><img src="img/img_dzen.png"></a></div>
+                  </svg></a><a class="headerMobile__menu-item" href="#" data-i="3">Контакты</a></div>
+              <div class="headerMobile__button">
+                <button class="btn btn--red btn--block">Оставить заявку</button>
+              </div>
+              <div class="headerMobile__block">
+                <div class="headerMobile__socials">
+                  <div class="headerMobile__social"><a href="#"><img src="img/img_vc.png"></a></div>
+                  <div class="headerMobile__social"><a href="#"><img src="img/img_telegram.png"></a></div>
+                  <div class="headerMobile__social"><a href="#"><img src="img/img_dzen.png"></a></div>
+                </div>
+              </div>
+              <div class="headerMobile__contacts"><a href="#">inform@interexpertiza.ru</a><br><a href="#">+7 (495) 777-12-70</a><a href="#">+7 (495) 777-12-71</a></div>
+              <div class="headerMobile__block">
+                <div class="c">
+                  <form class="headerMobile__search">
+                    <input class="headerMobile__search-input" placeholder="Что ищете?">
+                    <button class="headerMobile__search-button">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#search-usage"></use>
+                      </svg>
+                    </button>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="headerMobile__contacts"><a href="#">inform@interexpertiza.ru</a><br><a href="#">+7 (495) 777-12-70</a><a href="#">+7 (495) 777-12-71</a></div>
-          <div class="headerMobile__block">
-            <form class="headerMobile__search">
-              <input class="headerMobile__search-input" placeholder="Что ищете?">
-              <button class="headerMobile__search-button">
-                <svg>
-                  <use xlink:href="img/sprite.svg#search-usage"></use>
-                </svg>
-              </button>
-            </form>
+          <div class="headerMobile__sub">
+            <div class="c">
+              <div class="headerMobile__submenu" data-i="0">
+                <button class="headerMobile__submenu-head">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#chevrone-usage"></use>
+                  </svg>О компании
+                </button><a class="headerMobile__submenu-item" href="#">О нас
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-usage"></use>
+                  </svg></a><a class="headerMobile__submenu-item" href="#">Наша команда
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-usage"></use>
+                  </svg></a><a class="headerMobile__submenu-item" href="#">Рейтинги и рэнкинги
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-usage"></use>
+                  </svg></a><a class="headerMobile__submenu-item" href="#">Банки-партнёры
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-usage"></use>
+                  </svg></a><a class="headerMobile__submenu-item" href="#">Клиенты
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-usage"></use>
+                  </svg></a><a class="headerMobile__submenu-item" href="#">Отзывы
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-usage"></use>
+                  </svg></a><a class="headerMobile__submenu-item" href="#">Кейсы
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-usage"></use>
+                  </svg></a><a class="headerMobile__submenu-item" href="#">Раскрытие информации
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-usage"></use>
+                  </svg></a><a class="headerMobile__submenu-item" href="#">Реквизиты
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-usage"></use>
+                  </svg></a>
+              </div>
+              <div class="headerMobile__submenu" data-i="1">
+                <button class="headerMobile__submenu-head">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#chevrone-usage"></use>
+                  </svg>Услуги
+                </button><a class="headerMobile__submenu-item" href="#">Аудиторские услуги
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-usage"></use>
+                  </svg></a><a class="headerMobile__submenu-item" href="#">Услуги по МСФО
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-usage"></use>
+                  </svg></a><a class="headerMobile__submenu-item" href="#">Юридические услуги
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-usage"></use>
+                  </svg></a><a class="headerMobile__submenu-item" href="#">Бухгалтерский аутсорсинг
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-usage"></use>
+                  </svg></a><a class="headerMobile__submenu-item" href="#">Бухгалтерский и налоговый консалтинг
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-usage"></use>
+                  </svg></a><a class="headerMobile__submenu-item" href="#">Услуги по оценке
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-usage"></use>
+                  </svg></a><a class="headerMobile__submenu-item" href="#">Верификация “зелёных” финансовых инструментов
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-usage"></use>
+                  </svg></a>
+              </div>
+              <div class="headerMobile__submenu" data-i="2">
+                <button class="headerMobile__submenu-head">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#chevrone-usage"></use>
+                  </svg>Пресс-центр
+                </button><a class="headerMobile__submenu-item" href="#">Новости
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-usage"></use>
+                  </svg></a><a class="headerMobile__submenu-item" href="#">Статьи
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-usage"></use>
+                  </svg></a><a class="headerMobile__submenu-item" href="#">Вопросы и ответы
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-usage"></use>
+                  </svg></a>
+              </div>
+              <div class="headerMobile__button">
+                <button class="btn btn--block">Заказать консультацию</button>
+              </div>
+              <div class="headerMobile__block">
+                <div class="c">
+                  <form class="headerMobile__search">
+                    <input class="headerMobile__search-input" placeholder="Что ищете?">
+                    <button class="headerMobile__search-button">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#search-usage"></use>
+                      </svg>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

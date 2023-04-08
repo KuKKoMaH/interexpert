@@ -79,7 +79,7 @@
     font-weight: 600;
     text-align: center;
     @include mobile() {
-      font-size: 18px;
+      font-size: 20px;
     }
   }
 
@@ -87,5 +87,8 @@
     font-size: 16px;
     margin-top: 6px;
     text-align: center;
+    @include mobile() {
+      font-size: 14px;
+    }
   }
 }

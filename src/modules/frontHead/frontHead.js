@@ -33,13 +33,15 @@ if ($slides.length) {
     //   prevEl: $el.parents('.hints').find('.hints__nav--prev')[0],
     //   nextEl: $el.parents('.hints').find('.hints__nav--next')[0],
     // },
-    pagination: {
+    pagination:   {
       el:        $el.parents('.frontHead').find('.pagination')[0],
       clickable: true,
     },
+    loop:         true,
+    loopedSlides: 2,
     // touchEventsTarget: 'wrapper',
     slidesPerView: 1,
     spaceBetween:  20,
-    autoHeight: true,
+    autoHeight:    true,
   }), { sm: true, lg: false });
 }

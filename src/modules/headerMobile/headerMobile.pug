@@ -12,66 +12,132 @@
     .c
       a.headerMobile__phone(href='#') +7 (495) 777-12-70
       button.headerMobile__menu-toggle
-        | Меню
-        +the_svg('menu')
+        .active
+          | Меню
+          +the_svg('menu')
+        .inactive
+          | Закрыть
+          +the_svg('x')
 
   .headerMobile__popup
-    .c
-      .headerMobile__menu
-        ul
-          li
-            a(href='#')
+    .headerMobile__container
+      .headerMobile__main
+        .c
+          .headerMobile__menu
+            a.headerMobile__menu-item.headerMobile__menu-item--submenu(href='#' data-i=0)
               | О компании
               +the_svg('chevrone')
-            ul
-              li: a(href='#') О нас
-              li: a(href='#') Наша команда
-              li: a(href='#') Рейтинги и рэнкинги
-              li: a(href='#') Банки-партнёры
-              li: a(href='#') Клиенты
-              li: a(href='#') Отзывы
-              li: a(href='#') Кейсы
-              li: a(href='#') Раскрытие информации
-              li: a(href='#') Реквизиты
-          li
-            a(href='#')
+            a.headerMobile__menu-item.headerMobile__menu-item--submenu(href='#' data-i=1)
               | Услуги
               +the_svg('chevrone')
-            ul
-              li: a(href='#') Аудиторские услуги
-              li: a(href='#') Услуги по МСФО
-              li: a(href='#') Юридические услуги
-              li: a(href='#') Бухгалтерский аутсорсинг
-              li: a(href='#') Бухгалтерский и налоговый консалтинг
-              li: a(href='#') Услуги по оценке
-              li: a(href='#') Верификация “зелёных” финансовых инструментов
-          li
-            a(href='#')
+            a.headerMobile__menu-item.headerMobile__menu-item--submenu(href='#' data-i=2)
               | Пресс-центр
               +the_svg('chevrone')
-            ul
-              li: a(href='#') Новости
-              li: a(href='#') Статьи
-              li: a(href='#') Вопросы и ответы
-          li
-            a(href='#') Контакты
+            a.headerMobile__menu-item(href='#' data-i=3)
+              | Контакты
 
-      .headerMobile__button: button.btn.btn--red.btn--block Оставить заявку
+          .headerMobile__button: button.btn.btn--red.btn--block Оставить заявку
 
-      .headerMobile__block
-        .headerMobile__socials
-          .headerMobile__social: a(href='#'): img(src=require('src/img/vc.png'))
-          .headerMobile__social: a(href='#'): img(src=require('src/img/telegram.png'))
-          .headerMobile__social: a(href='#'): img(src=require('src/img/dzen.png'))
+          .headerMobile__block
+            .headerMobile__socials
+              .headerMobile__social: a(href='#'): img(src=require('src/img/vc.png'))
+              .headerMobile__social: a(href='#'): img(src=require('src/img/telegram.png'))
+              .headerMobile__social: a(href='#'): img(src=require('src/img/dzen.png'))
 
-      .headerMobile__contacts
-        a(href='#') inform@interexpertiza.ru
-        br
-        a(href='#') +7 (495) 777-12-70
-        a(href='#') +7 (495) 777-12-71
+          .headerMobile__contacts
+            a(href='#') inform@interexpertiza.ru
+            br
+            a(href='#') +7 (495) 777-12-70
+            a(href='#') +7 (495) 777-12-71
 
-      .headerMobile__block
-        form.headerMobile__search
-          input.headerMobile__search-input(placeholder='Что ищете?')
-          button.headerMobile__search-button: +the_svg('search')
+          .headerMobile__block
+            .c
+              form.headerMobile__search
+                input.headerMobile__search-input(placeholder='Что ищете?')
+                button.headerMobile__search-button: +the_svg('search')
+
+      .headerMobile__sub
+        .c
+          .headerMobile__submenu(data-i=0)
+            button.headerMobile__submenu-head
+              +the_svg('chevrone')
+              | О компании
+
+            a.headerMobile__submenu-item(href='#')
+              |О нас
+              +the_svg('arrow')
+            a.headerMobile__submenu-item(href='#')
+              |Наша команда
+              +the_svg('arrow')
+            a.headerMobile__submenu-item(href='#')
+              |Рейтинги и рэнкинги
+              +the_svg('arrow')
+            a.headerMobile__submenu-item(href='#')
+              |Банки-партнёры
+              +the_svg('arrow')
+            a.headerMobile__submenu-item(href='#')
+              |Клиенты
+              +the_svg('arrow')
+            a.headerMobile__submenu-item(href='#')
+              |Отзывы
+              +the_svg('arrow')
+            a.headerMobile__submenu-item(href='#')
+              |Кейсы
+              +the_svg('arrow')
+            a.headerMobile__submenu-item(href='#')
+              |Раскрытие информации
+              +the_svg('arrow')
+            a.headerMobile__submenu-item(href='#')
+              |Реквизиты
+              +the_svg('arrow')
+
+          .headerMobile__submenu(data-i=1)
+            button.headerMobile__submenu-head
+              +the_svg('chevrone')
+              | Услуги
+
+            a.headerMobile__submenu-item(href='#')
+              |Аудиторские услуги
+              +the_svg('arrow')
+            a.headerMobile__submenu-item(href='#')
+              |Услуги по МСФО
+              +the_svg('arrow')
+            a.headerMobile__submenu-item(href='#')
+              |Юридические услуги
+              +the_svg('arrow')
+            a.headerMobile__submenu-item(href='#')
+              |Бухгалтерский аутсорсинг
+              +the_svg('arrow')
+            a.headerMobile__submenu-item(href='#')
+              |Бухгалтерский и налоговый консалтинг
+              +the_svg('arrow')
+            a.headerMobile__submenu-item(href='#')
+              |Услуги по оценке
+              +the_svg('arrow')
+            a.headerMobile__submenu-item(href='#')
+              |Верификация “зелёных” финансовых инструментов
+              +the_svg('arrow')
+
+          .headerMobile__submenu(data-i=2)
+            button.headerMobile__submenu-head
+              +the_svg('chevrone')
+              | Пресс-центр
+
+            a.headerMobile__submenu-item(href='#')
+              |Новости
+              +the_svg('arrow')
+            a.headerMobile__submenu-item(href='#')
+              |Статьи
+              +the_svg('arrow')
+            a.headerMobile__submenu-item(href='#')
+              |Вопросы и ответы
+              +the_svg('arrow')
+
+          .headerMobile__button: button.btn.btn--block Заказать консультацию
+
+          .headerMobile__block
+            .c
+              form.headerMobile__search
+                input.headerMobile__search-input(placeholder='Что ищете?')
+                button.headerMobile__search-button: +the_svg('search')
 
