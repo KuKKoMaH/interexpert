@@ -1,7 +1,7 @@
-import { Swiper, Navigation, Pagination, Lazy, Autoplay, Grid } from 'swiper';
+import { Swiper, Navigation, Pagination, Autoplay, Grid } from 'swiper';
 import Breakpoints from 'breakpoints-js';
 
-Swiper.use([Navigation, Pagination, Lazy, Autoplay, Grid]);
+Swiper.use([Navigation, Pagination, Autoplay, Grid]);
 
 export default (selector, props, initOptions) => {
   if (!initOptions) initOptions = {};
